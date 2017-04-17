@@ -1,0 +1,3108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Periodic Table</title>
+        <script src="jquery-3.2.0.min.js"></script>
+    </head>
+    <body>
+    <!-- use this table for the display template: -->
+    <!-- http://www.chem.qmul.ac.uk/iupac/AtWt/table.html -->
+
+    <!-- periodic table -->
+        <h1 class="header">Classroom Utilities</h1>
+        <nav>
+            <span><a class="" href="index.html">Home</a></span>
+            <span><a class="" href="calculator.html">Calculator</a></span>
+            <span><a class="" href="periodic_table.html">Periodic Table of the Elements</a></span>
+        </nav>
+        <main>
+        <h1 class="header">Periodic Table of the Elements</h1>
+        <div id="periodic">
+            <table>
+                <tr>
+                    <td>1<button type="button" class="periodicButton" id="H">1 <br>H <br>1.008</button></td>
+                    <td class="group_header">
+                        <span class="hidden" id="hTooltip">
+                            <strong>Hydrogen</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 1.00794 u (g/mol)<br>
+                            Oxidation states: -1, +1<br>
+                            Ionic charge: H<sup>+</sup>, H<sup>-</sup><br>
+                            Electrons per shell: K1<br>
+                            Electron configuration: 1s<sup>1</sup><br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -252.87<br>
+                            Melting point, &#176;C: -259.14<br>
+                            Heat of fusion, kJ/mol: 0.558<br>
+                            Specific heat, J/kg&#183;K: 14300<br>
+                            Heat of vaporization, kJ/mol: 0.452<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 0.0112<br>
+                            Electronegativity: 2.2<br>
+                            Valence: 1
+                        </span>
+                        <br>2
+                    </td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="group_header">13</td>
+                    <td class="group_header">14</td>
+                    <td class="group_header">15</td>
+                    <td class="group_header">16</td>
+                    <td class="group_header">17</td>
+                    <td>18<button type="button" class="periodicButton" id="He">2 <br>He <br>4.0026</button></td>
+                    <td>
+                        <span class="hidden" id="heTooltip">
+                            <strong>Helium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 4.002602 u (g/mol)<br>
+                            Oxidation states: 0<br>
+                            Electrons per shell: K2<br>
+                            Electron configuration: 1s<sup>2</sup><br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -268.93<br>
+                            Heat of fusion, kJ/mol: 0.02<br>
+                            Specific heat, J/kg&#183;K: 5193.1<br>
+                            Heat of vaporization, kJ/mol: 0.083<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 0.1785<br>
+                            Valence: 0 
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="periodicButton" id="Li">3 <br>Li <br>6.94</button>
+                        </td>
+                    <td>
+                        <span class="hidden" id="liTooltip">
+                            <strong>Lithium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 6.941 u (g/mol)<br>
+                            Oxidation states: -1, +1<br>
+                            Ionic charge: Li<sup>+</sup><br>
+                            Electrons per shell: K2 L1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>1</sup><br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1342<br>
+                            Melting point, &#176;C: 180.54<br>
+                            Heat of fusion, kJ/mol: 3<br>
+                            Specific heat, J/kg&#183;K: 3570<br>
+                            Heat of vaporization, kJ/mol: 147<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 535<br>
+                            Electronegativity: 0.98<br>
+                            Valence: 1
+                        </span>
+                        <button type="button" class="periodicButton" id="Be">4 <br>Be <br>9.0122</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="beTooltip">
+                            <strong>Beryllium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 9.012182 u (g/mol)<br>
+                            Oxidation states: +2<br>
+                            Ionic charge: Be<sup>+2</sup><br>
+                            Electrons per shell: K2 L2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup><br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2470<br>
+                            Melting point, &#176;C: 1287<br>
+                            Heat of fusion, kJ/mol: 7.95<br>
+                            Specific heat, J/kg&#183;K: 1820<br>
+                            Heat of vaporization, kJ/mol: 297<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1848<br>
+                            Electronegativity: 1.57<br>
+                            Valence: 2                         
+                        </span>
+                    </td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td><button type="button" class="periodicButton" id="B">5 <br>B <br>10.81</button></td>
+                    <td>
+                        <span class="hidden" id="bTooltip">
+                            <strong>Boron</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 10.811 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Electrons per shell: K2 L3<br>
+                            Electron configuration: 1s<sup>1</sup> 2s<sup>2</sup> 2p<sup>1</sup><br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4000<br>
+                            Melting point, &#176;C: 2075<br>
+                            Heat of fusion, kJ/mol: 50<br>
+                            Specific heat, J/kg&#183;K: 1030<br>
+                            Heat of vaporization, kJ/mol: 507<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 2460<br>
+                            Electronegativity: 2.04<br>
+                            Valence: 3
+                        </span>
+                        <button type="button" class="periodicButton" id="C">6 <br>C <br>12.011</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="cTooltip">
+                            <strong>Carbon</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 12.0107 u (g/mol)<br>
+                            Oxidation states: -4, +2, +4<br>
+                            Electrons per shell: K2 L4<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup><br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4027<br>
+                            Melting point, &#176;C: 3550<br>
+                            Heat of fusion, kJ/mol: 105<br>
+                            Specific heat, J/kg&#183;K: 710<br>
+                            Heat of vaporization, kJ/mol: 715<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 2260<br>
+                            Electronegativity: 2.55<br>
+                            Valence: 4
+                        </span>
+                        <button type="button" class="periodicButton" id="N">7 <br>N <br>14.007</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="nTooltip">
+                            <strong>Nitrogen</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 14.0067 u (g/mol)<br>
+                            Oxidation states: -3, -2, -1, +1, +2, +3, +4, +5<br>
+                            Ionic charge: N<sup>-3</sup><br>
+                            Electrons per shell: K2 L5<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>3</sup><br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -195.79<br>
+                            Melting point, &#176;C: -210.1<br>
+                            Heat of fusion, kJ/mol: 0.36<br>
+                            Specific heat, J/kg&#183;K: 1040<br>
+                            Heat of vaporization, kJ/mol: 2.79<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1.251<br>
+                            Electronegativity: 3.04<br>
+                            Valence: 3
+                        </span>
+                        <button type="button" class="periodicButton" id="O">8 <br>O <br>15.999</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="oTooltip">
+                            <strong>Oxygen</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 15.9994 u (g/mol)<br>
+                            Oxidation states: -2, -1, <br>
+                            Ionic charge: O<sup>-2</sup><br>
+                            Electrons per shell: K2 L6<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>4</sup><br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -182.9<br>
+                            Melting point, &#176;C: -218.3<br>
+                            Heat of fusion, kJ/mol: 0.222<br>
+                            Specific heat, J/kg&#183;K: 919<br>
+                            Heat of vaporization, kJ/mol: 3.41<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1.429<br>
+                            Electronegativity: 3.44<br>
+                            Valence: 2
+                        </span>
+                        <button type="button" class="periodicButton" id="F">9 <br>F <br>18.998</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="fTooltip">
+                            <strong>Fluorine</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 18.9984 u (g/mol)<br>
+                            Oxidation states: -1<br>
+                            Ionic charge: F<sup>-</sup><br>
+                            Electrons per shell: K2 L7<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>5</sup><br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -188.12<br>
+                            Melting point, &#176;C: -219.6<br>
+                            Heat of fusion, kJ/mol: 0.26<br>
+                            Specific heat, J/kg&#183;K: 824<br>
+                            Heat of vaporization, kJ/mol: 3.27<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1.696<br>
+                            Electronegativity: 3.98<br>
+                            Valence: 1
+                        </span>
+                        <button type="button" class="periodicButton" id="Ne">10 <br>Ne <br>20.180</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="neTooltip">
+                            <strong>Neon</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 20.1797 u (g/mol)<br>
+                            Oxidation states: 0<br>
+                            Electrons per shell: K2 L8<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -246.08<br>
+                            Melting point, &#176;C: -248.59<br>
+                            Heat of fusion, kJ/mol: 0.34<br>
+                            Specific heat, J/kg&#183;K: 1030<br>
+                            Heat of vaporization, kJ/mol: 1.75<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 0.9<br>
+                            Valence: 0 
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="periodicButton" id="Na">11 <br>Na <br>22.990</button></td>
+                    <td>
+                        <span class="hidden" id="naTooltip">
+                            <strong>Sodium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 22.9898 u (g/mol)<br>
+                            Oxidation states: +1<br>
+                            Ionic charge: Na<sup>+</sup><br>
+                            Electrons per shell: K2 L8 M1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 883<br>
+                            Melting point, &#176;C: 97.72<br>
+                            Heat of fusion, kJ/mol: 2.6<br>
+                            Specific heat, J/kg&#183;K: 1230<br>
+                            Heat of vaporization, kJ/mol: 97.7<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 968<br>
+                            Electronegativity: 0.93<br>
+                            Valence: 1
+                        </span>
+                        <button type="button" class="periodicButton" id="Mg">12 <br>Mg <br>24.305</button>
+                    </td>
+                    <td class="group_header">
+                        <span class="hidden" id="mgTooltip">
+                            <strong>Magnesium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 24.3050 u (g/mol)<br>
+                            Oxidation states: +2<br>
+                            Ionic charge: Mg<sup>+2</sup><br>
+                            Electrons per shell: K2 L8 M2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1090<br>
+                            Melting point, &#176;C: 650<br>
+                            Heat of fusion, kJ/mol: 8.7<br>
+                            Specific heat, J/kg&#183;K: 1020<br>
+                            Heat of vaporization, kJ/mol: 128<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1738<br>
+                            Electronegativity: 1.31<br>
+                            Valence: 2
+                        </span>
+                        <br>3
+                    </td>
+                    <td class="group_header">4</td>
+                    <td class="group_header">5</td>
+                    <td class="group_header">6</td>
+                    <td class="group_header">7</td>
+                    <td class="group_header">8</td>
+                    <td class="group_header">9</td>
+                    <td class="group_header">10</td>
+                    <td class="group_header">11</td>
+                    <td class="group_header">12</td>
+                    <td><button type="button" class="periodicButton" id="Al">13 <br>Al <br>26.982</button></td>
+                    <td>
+                        <span class="hidden" id="alTooltip">
+                            <strong>Aluminium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 26.9815 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Al<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M3<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2519<br>
+                            Melting point, &#176;C: 660.32<br>
+                            Heat of fusion, kJ/mol: 10.7<br>
+                            Specific heat, J/kg&#183;K: 904<br>
+                            Heat of vaporization, kJ/mol: 293<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 2700<br>
+                            Electronegativity: 1.61<br>
+                            Valence: 3
+                        </span>
+                        <button type="button" class="periodicButton" id="Si">14 <br>Si <br>28.085</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="siTooltip">
+                            <strong>Silicon</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 28.0855 u (g/mol)<br>
+                            Oxidation states: -4, +2, +4<br>
+                            Ionic charge: <br>
+                            Electrons per shell: K2 L8 M4<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2900<br>
+                            Melting point, &#176;C: 1414<br>
+                            Heat of fusion, kJ/mol: 50.2<br>
+                            Specific heat, J/kg&#183;K: 710<br>
+                            Heat of vaporization, kJ/mol: 359<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 2330<br>
+                            Electronegativity: 1.9<br>
+                            Valence: 4
+                        </span>
+                        <button type="button" class="periodicButton" id="P">15 <br>P <br>30.974</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="pTooltip">
+                            <strong>Phosphorus</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 30.9738 u (g/mol)<br>
+                            Oxidation states: -3, +3, +4, +5<br>
+                            Ionic charge: P<sup>-3</sup><br>
+                            Electrons per shell: K2 L8 M5<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>3</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 280.5<br>
+                            Melting point, &#176;C: 44.2<br>
+                            Heat of fusion, kJ/mol: 0.64<br>
+                            Specific heat, J/kg&#183;K: 769.7<br>
+                            Heat of vaporization, kJ/mol: 12.4<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1823<br>
+                            Electronegativity: 2.19<br>
+                            Valence: 5
+                        </span>    
+                        <button type="button" class="periodicButton" id="S">16 <br>S <br>32.06</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="sTooltip">
+                            <strong>Sulfur</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 32.065 u (g/mol)<br>
+                            Oxidation states: -2, +2, +4, +6<br>
+                            Ionic charge: S<sup>-2</sup><br>
+                            Electrons per shell: K2 L8 M6<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>4</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 444.72<br>
+                            Melting point, &#176;C: 115.21<br>
+                            Heat of fusion, kJ/mol: 1.73<br>
+                            Specific heat, J/kg&#183;K: 705<br>
+                            Heat of vaporization, kJ/mol: 9.8<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1960<br>
+                            Electronegativity: 2.58<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Cl">17 <br>Cl <br>35.45</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="clTooltip">
+                            <strong>Chlorine</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 35.453 u (g/mol)<br>
+                            Oxidation states: -1, +1, +3, +5, +7<br>
+                            Ionic charge: Cl<sup>-</sup><br>
+                            Electrons per shell: K2 L8 M7<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -34.04<br>
+                            Melting point, &#176;C: -101.5<br>
+                            Heat of fusion, kJ/mol: 3.2<br>
+                            Specific heat, J/kg&#183;K: 478.2<br>
+                            Heat of vaporization, kJ/mol: 10.2<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 3.214<br>
+                            Electronegativity: 3.16<br>
+                            Valence: 1
+                        </span>
+                        <button type="button" class="periodicButton" id="Ar">18 <br>Ar <br>39.948</button>   
+                    </td>
+                    <td>
+                        <span class="hidden" id="arTooltip">
+                            <strong>Argon</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 39.948 u (g/mol)<br>
+                            Oxidation states: 0<br>
+                            Electrons per shell: K2 L8 M8<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -185.8<br>
+                            Melting point, &#176;C: -189.3<br>
+                            Heat of fusion, kJ/mol: 1.18<br>
+                            Specific heat, J/kg&#183;K: 520.33<br>
+                            Heat of vaporization, kJ/mol: 6.5<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1.784<br>
+                            Valence: 0
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="periodicButton" id="K">19 <br>K <br>39.098</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="kTooltip">
+                            <strong>Potassium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 39.0983 u (g/mol)<br>
+                            Oxidation states: +1<br>
+                            Ionic charge: K<sup>+</sup><br>
+                            Electrons per shell: K2 L8 M8 N1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 759<br>
+                            Melting point, &#176;C: 63.38<br>
+                            Heat of fusion, kJ/mol: 2.33<br>
+                            Specific heat, J/kg&#183;K: 757<br>
+                            Heat of vaporization, kJ/mol: 76.9<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 856<br>
+                            Electronegativity: 0.82<br>
+                            Valence: 1
+                        </span>
+                        <button type="button" class="periodicButton" id="Ca">20 <br>Ca <br>40.078</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="caTooltip">
+                            <strong>Calcium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 40.078 u (g/mol)<br>
+                            Oxidation states: +2<br>
+                            Ionic charge: Ca<sup>+2</sup><br>
+                            Electrons per shell: K2 L8 M8 N2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1484<br>
+                            Melting point, &#176;C: 842<br>
+                            Heat of fusion, kJ/mol: 8.54<br>
+                            Specific heat, J/kg&#183;K: 631<br>
+                            Heat of vaporization, kJ/mol: 155<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1550<br>
+                            Electronegativity: 1<br>
+                            Valence: 2
+                        </span>
+                        <button type="button" class="periodicButton" id="Sc">21 <br>Sc <br>44.956</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="scTooltip">
+                            <strong>Scandium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 44.9559 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: SC<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M9 N2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2830<br>
+                            Melting point, &#176;C: 1541<br>
+                            Heat of fusion, kJ/mol: 16<br>
+                            Specific heat, J/kg&#183;K: 567<br>
+                            Heat of vaporization, kJ/mol: 318<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 2985<br>
+                            Electronegativity: 1.36<br>
+                            Valence: 3
+                        </span>
+                        <button type="button" class="periodicButton" id="Ti">22 <br>Ti <br>47.867</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="tiTooltip">
+                            <strong>Titanium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 47.867 u (g/mol)<br>
+                            Oxidation states: +2, +3, +4<br>
+                            Ionic charge: Ti<sup>+3</sup>, Ti<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M10 N2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3287<br>
+                            Melting point, &#176;C: 1668<br>
+                            Heat of fusion, kJ/mol: 18.7<br>
+                            Specific heat, J/kg&#183;K: 520<br>
+                            Heat of vaporization, kJ/mol: 425<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 4507<br>
+                            Electronegativity: 1.54<br>
+                            Valence: 4
+                        </span>
+                        <button type="button" class="periodicButton" id="V">23 <br>V <br>50.942</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="vTooltip">
+                            <strong>Vanadium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 50.9415 u (g/mol)<br>
+                            Oxidation states: +2, +3, +4, +5<br>
+                            Ionic charge: V<sup>+3</sup>, V<sup>+5</sup><br>
+                            Electrons per shell: K2 L8 M11 N2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>3</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3407<br>
+                            Melting point, &#176;C: 1910<br>
+                            Heat of fusion, kJ/mol: 22.8<br>
+                            Specific heat, J/kg&#183;K: 489<br>
+                            Heat of vaporization, kJ/mol: 453<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 6110<br>
+                            Electronegativity: 1.63<br>
+                            Valence: 5
+                        </span>    
+                        <button type="button" class="periodicButton" id="Cr">24 <br>Cr <br>51.996</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="crTooltip">
+                            <strong>Chromium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 51.9961 u (g/mol)<br>
+                            Oxidation states: -2, +2, +3, +4, +6<br>
+                            Ionic charge: Cr<sup>+2</sup>, Cr<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M13 N1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup> 3d<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2671<br>
+                            Melting point, &#176;C: 1907<br>
+                            Heat of fusion, kJ/mol: 20.5<br>
+                            Specific heat, J/kg&#183;K: 448<br>
+                            Heat of vaporization, kJ/mol: 339<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7140<br>
+                            Electronegativity: 1.66<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Mn">25 <br>Mn <br>54.938</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="mnTooltip">
+                            <strong>Manganese</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 54.9380 u (g/mol)<br>
+                            Oxidation states: -1, +2, +3, +4, +5, +6, +7<br>
+                            Ionic charge: Mn<sup>+2</sup>, Mn<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M13 N2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2061<br>
+                            Melting point, &#176;C: 1246<br>
+                            Heat of fusion, kJ/mol: 13.2<br>
+                            Specific heat, J/kg&#183;K: 479<br>
+                            Heat of vaporization, kJ/mol: 220<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7470<br>
+                            Electronegativity: 1.55<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Fe">26 <br>Fe <br>55.845</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="feTooltip">
+                            <strong>Iron</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 55.845 u (g/mol)<br>
+                            Oxidation states: -2, +2, +3<br>
+                            Ionic charge: Fe<sup>-2</sup>, Fe<sup>+2</sup>, Fe<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M14 N2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>6</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2861<br>
+                            Melting point, &#176;C: 1538<br>
+                            Heat of fusion, kJ/mol: 13.8<br>
+                            Specific heat, J/kg&#183;K: 449<br>
+                            Heat of vaporization, kJ/mol: 347<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7874<br>
+                            Electronegativity: 1.83<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Co">27 <br>Co <br>58.933</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="coTooltip">
+                            <strong>Cobalt</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 58.9332 u (g/mol)<br>
+                            Oxidation states: -1, +2, +3<br>
+                            Ionic charge: Co<sup>+2</sup>, Co<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M15 N2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>7</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2927<br>
+                            Melting point, &#176;C: 1495<br>
+                            Heat of fusion, kJ/mol: 16.2<br>
+                            Specific heat, J/kg&#183;K: 421<br>
+                            Heat of vaporization, kJ/mol: 375<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 8900<br>
+                            Electronegativity: 1.88<br>
+                            Valence: 4
+                        </span>
+                        <button type="button" class="periodicButton" id="Ni">28 <br>Ni <br>58.693</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="niTooltip">
+                            <strong>Nickel</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 58.6934 u (g/mol)<br>
+                            Oxidation states: -1, +2, +3<br>
+                            Ionic charge: Ni<sup>+2</sup>, Ni<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M16 N2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>8</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2913<br>
+                            Melting point, &#176;C: 1455<br>
+                            Heat of fusion, kJ/mol: 17.2<br>
+                            Specific heat, J/kg&#183;K: 445<br>
+                            Heat of vaporization, kJ/mol: 378<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 8908<br>
+                            Electronegativity: 1.91<br>
+                            Valence: 2
+                        </span>   
+                        <button type="button" class="periodicButton" id="Cu">29 <br>Cu <br>63.546</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="cuTooltip">
+                            <strong>Copper</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 63.546 u (g/mol)<br>
+                            Oxidation states: +1, +2<br>
+                            Ionic charge: Cu<sup>+2</sup>, Cu<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>1</sup> 3d<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2927<br>
+                            Melting point, &#176;C: 1084.62<br>
+                            Heat of fusion, kJ/mol: 13.1<br>
+                            Specific heat, J/kg&#183;K: 384.4<br>
+                            Heat of vaporization, kJ/mol: 300<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 8920<br>
+                            Electronegativity: 1.9<br>
+                            Valence: 2
+                        </span>    
+                        <button type="button" class="periodicButton" id="Zn">30 <br>Zn <br>65.38</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="znTooltip">
+                            <strong>Zinc</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 65.38u (g/mol)<br>
+                            Oxidation states: +2<br>
+                            Ionic charge: Zn<sup>+2</sup><br>
+                            Electrons per shell: K2 L8 M18 N2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 907<br>
+                            Melting point, &#176;C: 419.53<br>
+                            Heat of fusion, kJ/mol: 7.35<br>
+                            Specific heat, J/kg&#183;K: 388<br>
+                            Heat of vaporization, kJ/mol: 119<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7140<br>
+                            Electronegativity: 1.65<br>
+                            Valence: 2
+                        </span>
+                        <button type="button" class="periodicButton" id="Ga">31 <br>Ga <br>69.723</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="gaTooltip">
+                            <strong>Gallium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 69.723 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Ga<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N3<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4n<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2204<br>
+                            Melting point, &#176;C: 29.76<br>
+                            Heat of fusion, kJ/mol: 5.59<br>
+                            Specific heat, J/kg&#183;K: 371<br>
+                            Heat of vaporization, kJ/mol: 256<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 5904<br>
+                            Electronegativity: 1.81<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ge">32 <br>Ge <br>72.630</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="geTooltip">
+                            <strong>Germanium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 72.64 u (g/mol)<br>
+                            Oxidation states: +2, +4<br>
+                            Ionic charge: Ge<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N4<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2820<br>
+                            Melting point, &#176;C: 938.3<br>
+                            Heat of fusion, kJ/mol: 31.8<br>
+                            Specific heat, J/kg&#183;K: 321.4<br>
+                            Heat of vaporization, kJ/mol: 334<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 5323<br>
+                            Electronegativity: 2.01<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="As">33 <br>As <br>74.922</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="asTooltip">
+                            <strong>Arsenic</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 74.9216 u (g/mol)<br>
+                            Oxidation states: -3, +3, +5<br>
+                            Ionic charge: As<sup>-3</sup><br>
+                            Electrons per shell: K2 L8 M18 N5<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>3</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 614<br>
+                            Melting point, &#176;C: 817<br>
+                            Heat of fusion, kJ/mol: 27.7<br>
+                            Specific heat, J/kg&#183;K: 328<br>
+                            Heat of vaporization, kJ/mol: 32.4<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 5727<br>
+                            Electronegativity: 2.18<br>
+                            Valence: 5
+                        </span>
+                        <button type="button" class="periodicButton" id="Se">34 <br>Se <br>78.97</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="seTooltip">
+                            <strong>Selenium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 78.96 u (g/mol)<br>
+                            Oxidation states: -2, +2, +4, +6<br>
+                            Ionic charge: Se<sup>-2</sup><br>
+                            Electrons per shell: K2 L8 M18 N6<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>4</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 685<br>
+                            Melting point, &#176;C: 221<br>
+                            Heat of fusion, kJ/mol: 5.4<br>
+                            Specific heat, J/kg&#183;K: 321.2<br>
+                            Heat of vaporization, kJ/mol: 26<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 4819<br>
+                            Electronegativity: 2.55<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Br">35 <br>Br <br>79.904</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="brTooltip">
+                            <strong>Bromine</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 79.904 u (g/mol)<br>
+                            Oxidation states: -1, +1, +3, +5, +<br>
+                            Ionic charge: Br<sup>-</sup><br>
+                            Electrons per shell: K2 L8 M18 N7<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup></sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 59<br>
+                            Melting point, &#176;C: -7.3<br>
+                            Heat of fusion, kJ/mol: 5.8<br>
+                            Specific heat, J/kg&#183;K: 947.3<br>
+                            Heat of vaporization, kJ/mol: 14.8<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 3120<br>
+                            Electronegativity: 2.96<br>
+                            Valence: 7
+                        </span>    
+                        <button type="button" class="periodicButton" id="Kr">36 <br>Kr <br>83.798</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="krTooltip">
+                            <strong>Krypton</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 83.798 u (g/mol)<br>
+                            Oxidation states: 0, +2, +4<br>
+                            Electrons per shell: K2 L8 M18 N8<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -153.22<br>
+                            Melting point, &#176;C: -157.36<br>
+                            Heat of fusion, kJ/mol: 1.64<br>
+                            Specific heat, J/kg&#183;K: 248.05<br>
+                            Heat of vaporization, kJ/mol: 9.02<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 3.75<br>
+                            Electronegativity: 3<br>
+                            Valence: 2
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="periodicButton" id="Rb">37 <br>Rb <br>85.468</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="rbTooltip">
+                            <strong>Rubidium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 85.4678 u (g/mol)<br>
+                            Oxidation states: +1<br>
+                            Ionic charge: Rb<sup>+</sup><br>
+                            Electrons per shell: K2 L8 M18 N8 O1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 688<br>
+                            Melting point, &#176;C: 39.31<br>
+                            Heat of fusion, kJ/mol: 2.19<br>
+                            Specific heat, J/kg&#183;K: 364<br>
+                            Heat of vaporization, kJ/mol: 72<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1532<br>
+                            Electronegativity: 0.82<br>
+                            Valence: 1
+                        </span>
+                        <button type="button" class="periodicButton" id="Sr">38 <br>Sr <br>87.68</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="srTooltip">
+                            <strong>Strontium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 87.62 u (g/mol)<br>
+                            Oxidation states: +2<br>
+                            Ionic charge: Sr<sup>+2</sup><br>
+                            Electrons per shell: K2 L8 M18 N8 O2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1382<br>
+                            Melting point, &#176;C: 777<br>
+                            Heat of fusion, kJ/mol: 8<br>
+                            Specific heat, J/kg&#183;K: 300<br>
+                            Heat of vaporization, kJ/mol: 137<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 2630<br>
+                            Electronegativity: 0.95<br>
+                            Valence: 2
+                        </span>
+                        <button type="button" class="periodicButton" id="Y">39 <br>Y <br>88.906</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="yTooltip">
+                            <strong>Yttrium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 88.9059 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Y<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N9 O2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3345<br>
+                            Melting point, &#176;C: 1526<br>
+                            Heat of fusion, kJ/mol: 11.4<br>
+                            Specific heat, J/kg&#183;K: 298<br>
+                            Heat of vaporization, kJ/mol: 380<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 4472<br>
+                            Electronegativity: 1.22<br>
+                            Valence: 3
+                        </span>     
+                        <button type="button" class="periodicButton" id="Zr">40 <br>Zr <br>91.224</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="zrTooltip">
+                            <strong>Zirconium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 91.224 u (g/mol)<br>
+                            Oxidation states: +3, +4<br>
+                            Ionic charge: Zr<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N10 O2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4409<br>
+                            Melting point, &#176;C: 1855<br>
+                            Heat of fusion, kJ/mol: 21<br>
+                            Specific heat, J/kg&#183;K: 278<br>
+                            Heat of vaporization, kJ/mol: 580<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 6511<br>
+                            Electronegativity: 1.33<br>
+                            Valence: 4
+                        </span>
+                        <button type="button" class="periodicButton" id="Nb">41 <br>Nb <br>92.906</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="nbTooltip">
+                            <strong>Niobium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 92.9064 u (g/mol)<br>
+                            Oxidation states: -1, +3, +5<br>
+                            Ionic charge: Nb<sup>+3</sup>, Nb<sup>+5</sup><br>
+                            Electrons per shell: K2 L8 M18 N12 O1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>1</sup> 4d<sup>4</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4744<br>
+                            Melting point, &#176;C: 2477<br>
+                            Heat of fusion, kJ/mol: 26.8<br>
+                            Specific heat, J/kg&#183;K: 265<br>
+                            Heat of vaporization, kJ/mol: 690<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 8570<br>
+                            Electronegativity: 1.6<br>
+                            Valence: 5
+                        </span>    
+                        <button type="button" class="periodicButton" id="Mo">42 <br>Mo <br>95.95</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="moTooltip">
+                            <strong>Molybdenum</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 95.96 u (g/mol)<br>
+                            Oxidation states: -2, +2, +3, +4, +5, +6<br>
+                            Ionic charge: Mo<sup>+6</sup><br>
+                            Electrons per shell: K2 L8 M18 N13 O1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>1</sup> 4d<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4639<br>
+                            Melting point, &#176;C: 2623<br>
+                            Heat of fusion, kJ/mol: 36<br>
+                            Specific heat, J/kg&#183;K: 251<br>
+                            Heat of vaporization, kJ/mol: 600<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 10280<br>
+                            Electronegativity: 2.16<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Tc">43 <br>Tc <br>(98)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="tcTooltip">
+                            <strong>Technetium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (97.9072) u (g/mol)<br>
+                            Oxidation states: -1, +4, +7<br>
+                            Ionic charge: Tc<sup>+7</sup><br>
+                            Electrons per shell: K2 L8 M18 N13 O2<br>
+                            Electron configuraton: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4265<br>
+                            Melting point, &#176;C: 2157<br>
+                            Heat of fusion, kJ/mol: 23<br>
+                            Specific heat, J/kg&#183;K: 63<br>
+                            Heat of vaporization, kJ/mol: 550<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 11500<br>
+                            Electronegativity: 1.9<br>
+                            Valence: 7
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ru">44 <br>Ru <br>101.07</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="ruTooltip">
+                            <strong>Ruthenium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 101.07 u (g/mol)<br>
+                            Oxidation states: -2, +2, +3, +4, +6, +8<br>
+                            Ionic charge: Ru<sup>+3</sup>, Ru<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N15 O1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>1</sup> 4d<sup>7</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4150<br>
+                            Melting point, &#176;C: 2334<br>
+                            Heat of fusion, kJ/mol: 25.7<br>
+                            Specific heat, J/kg&#183;K: 238<br>
+                            Heat of vaporization, kJ/mol: 580<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 12370<br>
+                            Electronegativity: 2.2<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Rh">45 <br>Rh <br>102.91</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="rhTooltip">
+                            <strong>Rhodium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 102.9055 u (g/mol)<br>
+                            Oxidation states: -1, +2, +3, +4<br>
+                            Ionic charge: Rh<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N16 O1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>1</sup> 4d<sup>8</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3695<br>
+                            Melting point, &#176;C: 1964<br>
+                            Heat of fusion, kJ/mol: 21.7<br>
+                            Specific heat, J/kg&#183;K: 240<br>
+                            Heat of vaporization, kJ/mol: 495<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 12450<br>
+                            Electronegativity: 2.28<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Pd">46 <br>Pd <br>106.42</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="pdTooltip">
+                            <strong>Palladium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 106.42 u (g/mol)<br>
+                            Oxidation states: +2, +4<br>
+                            Ionic charge: Pd<sup>+2</sup>, Pd<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N18<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 4d<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2963<br>
+                            Melting point, &#176;C: 1554.9<br>
+                            Heat of fusion, kJ/mol: 16.7<br>
+                            Specific heat, J/kg&#183;K: 240<br>
+                            Heat of vaporization, kJ/mol: 380<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 12023<br>
+                            Electronegativity: 2.2<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ag">47 <br>Ag <br>107.87</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="agTooltip">
+                            <strong>Silver</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 107.8682 u (g/mol)<br>
+                            Oxidation states: +1, +2<br>
+                            Ionic charge: Ag<sup>+</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>1</sup> 4d<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2162<br>
+                            Melting point, &#176;C: 961.78<br>
+                            Heat of fusion, kJ/mol: 11.3<br>
+                            Specific heat, J/kg&#183;K: 235<br>
+                            Heat of vaporization, kJ/mol: 255<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 10490<br>
+                            Electronegativity: 1.93<br>
+                            Valence: 1
+                        </span>    
+                        <button type="button" class="periodicButton" id="Cd">48 <br>Cd <br>112.41</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="cdTooltip">
+                            <strong>Cadmium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 112.411 u (g/mol)<br>
+                            Oxidation states: +2<br>
+                            Ionic charge: Cd<sup>+2</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 767<br>
+                            Melting point, &#176;C: 321.07<br>
+                            Heat of fusion, kJ/mol: 6.3<br>
+                            Specific heat, J/kg&#183;K: 240<br>
+                            Heat of vaporization, kJ/mol: 100<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 8650<br>
+                            Electronegativity: 1.69<br>
+                            Valence: 2
+                        </span>    
+                        <button type="button" class="periodicButton" id="In">49 <br>In <br>114.82</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="inTooltip">
+                            <strong>Indium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 114.818 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: In<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O3<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2072<br>
+                            Melting point, &#176;C: 156.6<br>
+                            Heat of fusion, kJ/mol: 3.26<br>
+                            Specific heat, J/kg&#183;K: 233<br>
+                            Heat of vaporization, kJ/mol: 230<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7310<br>
+                            Electronegativity: 1.78<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Sn">50 <br>Sn <br>118.71</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="snTooltip">
+                            <strong>Tin</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 118.710 u (g/mol)<br>
+                            Oxidation states: +2, +4<br>
+                            Ionic charge: Sn<sup>+2</sup>, Sn<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O4<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2602<br>
+                            Melting point, &#176;C: 231.93<br>
+                            Heat of fusion, kJ/mol: 7<br>
+                            Specific heat, J/kg&#183;K: 217<br>
+                            Heat of vaporization, kJ/mol: 290<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7310<br>
+                            Electronegativity: 1.96<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Sb">51 <br>Sb <br>121.76</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="sbTooltip">
+                            <strong>Antimony</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 121.760 u (g/mol)<br>
+                            Oxidation states: -3, +3, +5<br>
+                            Ionic charge: Sb<sup>+3</sup>, Sb<sup>+5</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O5<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>3</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1587<br>
+                            Melting point, &#176;C: 630.63<br>
+                            Heat of fusion, kJ/mol: 19.7<br>
+                            Specific heat, J/kg&#183;K: 207<br>
+                            Heat of vaporization, kJ/mol: 68<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 6697<br>
+                            Electronegativity: 2.05<br>
+                            Valence: 5
+                        </span>    
+                        <button type="button" class="periodicButton" id="Te">52 <br>Te <br>127.60</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="teTooltip">
+                            <strong>Tellurium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 127.60 u (g/mol)<br>
+                            Oxidation states: -2, +2, +4, +6<br>
+                            Ionic charge: Te<sup>+2</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O6<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>4</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 988<br>
+                            Melting point, &#176;C: 449.51<br>
+                            Heat of fusion, kJ/mol: 17.5<br>
+                            Specific heat, J/kg&#183;K: 201<br>
+                            Heat of vaporization, kJ/mol: 48<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 6240<br>
+                            Electronegativity: 2.1<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="I">53 <br>I <br>126.90</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="iTooltip">
+                            <strong>Iodine</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 126.9045 u (g/mol)<br>
+                            Oxidation states: -1, +1, +5, +7<br>
+                            Ionic charge: I<sup>-</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O7<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 184.3<br>
+                            Melting point, &#176;C: 113.7<br>
+                            Heat of fusion, kJ/mol: 7.76<br>
+                            Specific heat, J/kg&#183;K: 429<br>
+                            Heat of vaporization, kJ/mol: 20.9<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 4940<br>
+                            Electronegativity: 2.66<br>
+                            Valence: 7
+                        </span>    
+                        <button type="button" class="periodicButton" id="Xe">54 <br>Xe <br>131.29</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="xeTooltip">
+                            <strong>Xenon</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 131.293 u (g/mol)<br>
+                            Oxidation states: 0, +2, +4, +6, +8<br>
+                            Electrons per shell: K2 L8 M18 N18 O8<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -108<br>
+                            Melting point, &#176;C: -111.8<br>
+                            Heat of fusion, kJ/mol: 2.3<br>
+                            Specific heat, J/kg&#183;K: 158.32<br>
+                            Heat of vaporization, kJ/mol: 12.64<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 5.9<br>
+                            Electronegativity: 2.6<br>
+                            Valence: 6
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="periodicButton" id="Cs">55 <br>Cs <br>132.91</button></td>
+                    <td>
+                        <span class="hidden" id="csTooltip">
+                            <strong>Caesium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 132.9055 u (g/mol)<br>
+                            Oxidation states: +1<br>
+                            Ionic charge: Cs<sup>+</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O8 P1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 671<br>
+                            Melting point, &#176;C: 28.44<br>
+                            Heat of fusion, kJ/mol: 2.09<br>
+                            Specific heat, J/kg&#183;K: 242<br>
+                            Heat of vaporization, kJ/mol: 65<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 1879<br>
+                            Electronegativity: 0.79<br>
+                            Valence: 1
+                        </span>
+                        <button type="button" class="periodicButton" id="Ba">56 <br>Ba <br>137.33</button>
+                    </td>
+                    <td class="border">
+                        <span class="hidden" id="baTooltip">
+                            <strong>Barium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 137.327 u (g/mol)<br>
+                            Oxidation states: +2<br>
+                            Ionic charge: Bs<sup>+2</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1870<br>
+                            Melting point, &#176;C: 727<br>
+                            Heat of fusion, kJ/mol: 8<br>
+                            Specific heat, J/kg&#183;K: 205<br>
+                            Heat of vaporization, kJ/mol: 140<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 3510<br>
+                            Electronegativity: 0.89<br>
+                            Valence: 2
+                        </span>    
+                        57-71<br>*
+                    </td>
+                    <td><button type="button" class="periodicButton" id="Hf">72 <br>Hf <br>178.49</button></td>
+                    <td>
+                        <span class="hidden" id="hfTooltip">
+                            <strong>Hafnium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 178.49 u (g/mol)<br>
+                            Oxidation states: +4<br>
+                            Ionic charge: Hf<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O10 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4603<br>
+                            Melting point, &#176;C: 2233<br>
+                            Heat of fusion, kJ/mol: 25.5<br>
+                            Specific heat, J/kg&#183;K: 144<br>
+                            Heat of vaporization, kJ/mol: 630<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 13310<br>
+                            Electronegativity: 1.3<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ta">73 <br>Ta <br>180.95</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="taTooltip">
+                            <strong>Tantalum</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 180.9479 u (g/mol)<br>
+                            Oxidation states: +5<br>
+                            Ionic charge: Ta<sup>+5</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O11 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>3</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 5458<br>
+                            Melting point, &#176;C: 3017<br>
+                            Heat of fusion, kJ/mol: 36<br>
+                            Specific heat, J/kg&#183;K: 140<br>
+                            Heat of vaporization, kJ/mol: 735<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 16650<br>
+                            Electronegativity: 1.5<br>
+                            Valence: 5
+                        </span>    
+                        <button type="button" class="periodicButton" id="W">74 <br>W <br>183.84</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="wTooltip">
+                            <strong>Tungsten</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 183.84 u (g/mol)<br>
+                            Oxidation states: -2, -1, +2, +3, +4, +5, +6<br>
+                            Ionic charge: W<sup>+6</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O12 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>4</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 5555<br>
+                            Melting point, &#176;C: 3422<br>
+                            Heat of fusion, kJ/mol: 35<br>
+                            Specific heat, J/kg&#183;K: 132<br>
+                            Heat of vaporization, kJ/mol: 800<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 19250<br>
+                            Electronegativity: 2.36<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Re">75 <br>Re <br>186.21</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="reTooltip">
+                            <strong>Rhenium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 186.207 u (g/mol)<br>
+                            Oxidation states: -1, +2, +4, +6, +7<br>
+                            Ionic charge: Re<sup>+7</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O13 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 5596<br>
+                            Melting point, &#176;C: 3186<br>
+                            Heat of fusion, kJ/mol: 33<br>
+                            Specific heat, J/kg&#183;K: 137<br>
+                            Heat of vaporization, kJ/mol: 705<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 21020<br>
+                            Electronegativity: 1.9<br>
+                            Valence: 7
+                        </span>    
+                        <button type="button" class="periodicButton" id="Os">76 <br>Os <br>190.23</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="osTooltip">
+                            <strong>Osmium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 190.23 u (g/mol)<br>
+                            Oxidation states: -2, +2, +3, +4, +6, +8<br>
+                            Ionic charge: Os<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O14 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>6</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 5012<br>
+                            Melting point, &#176;C: 3033<br>
+                            Heat of fusion, kJ/mol: 31<br>
+                            Specific heat, J/kg&#183;K: 130<br>
+                            Heat of vaporization, kJ/mol: 630<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 22610<br>
+                            Electronegativity: 2.2<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ir">77 <br>Ir <br>192.22</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="irTooltip">
+                            <strong>Iridium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 192.217 u (g/mol)<br>
+                            Oxidation states: -1, +1, +2, +3, +4, +6<br>
+                            Ionic charge: Ir<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O15 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>7</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4428<br>
+                            Melting point, &#176;C: 2466<br>
+                            Heat of fusion, kJ/mol: 26<br>
+                            Specific heat, J/kg&#183;K: 131<br>
+                            Heat of vaporization, kJ/mol: 560<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 22650<br>
+                            Electronegativity: 2.2<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Pt">78 <br>Pt <br>195.08</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="ptTooltip">
+                            <strong>Platinum</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 195.084 u (g/mol)<br>
+                            Oxidation states: +2, +4<br>
+                            Ionic charge: Pt<sup>+2</sup>, Pt<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O17 P1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>1</sup> 4f<sup>14</sup> 5d<sup>9</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3825<br>
+                            Melting point, &#176;C: 1768.3<br>
+                            Heat of fusion, kJ/mol: 20<br>
+                            Specific heat, J/kg&#183;K: 133<br>
+                            Heat of vaporization, kJ/mol: 490<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 21090<br>
+                            Electronegativity: 2.28<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Au">79 <br>Au <br>196.97</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="auTooltip">
+                            <strong>Gold</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 196.9666 u (g/mol)<br>
+                            Oxidation states: +1, +3<br>
+                            Ionic charge: Au<sup>+</sup>, Au<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>1</sup> 4f<sup>14</sup> 5d<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2856<br>
+                            Melting point, &#176;C: 1064.18<br>
+                            Heat of fusion, kJ/mol: 12.5<br>
+                            Specific heat, J/kg&#183;K: 129.1<br>
+                            Heat of vaporization, kJ/mol: 330<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 19300<br>
+                            Electronegativity: 2.54<br>
+                            Valence: 5
+                        </span>    
+                        <button type="button" class="periodicButton" id="Hg">80 <br>Hg <br>200.59</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="hgTooltip">
+                            <strong>Mercury</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 200.59 u (g/mol)<br>
+                            Oxidation states: +1, +2<br>
+                            Ionic charge: Hg<sub>2</sub><sup>+2</sup>, Hg<sup>+2</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2<sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 356.73<br>
+                            Melting point, &#176;C: -38.83<br>
+                            Heat of fusion, kJ/mol: 2.29<br>
+                            Specific heat, J/kg&#183;K: 139.5<br>
+                            Heat of vaporization, kJ/mol: 59.2<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 13534<br>
+                            Electronegativity: 2<br>
+                            Valence: 2
+                        </span>    
+                        <button type="button" class="periodicButton" id="Tl">81 <br>Tl <br>204.38</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="tlTooltip">
+                            <strong>Thallium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 204.3833 u (g/mol)<br>
+                            Oxidation states: +1, +3<br>
+                            Ionic charge: Tl<sup>+</sup>, Tl<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P3<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1473<br>
+                            Melting point, &#176;C: 304<br>
+                            Heat of fusion, kJ/mol: 4.2<br>
+                            Specific heat, J/kg&#183;K: 129<br>
+                            Heat of vaporization, kJ/mol: 165<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 11850<br>
+                            Electronegativity: 1.62<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Pb">82 <br>Pb <br>207.2</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="pbTooltip">
+                            <strong>Lead</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 207.2 u (g/mol)<br>
+                            Oxidation states: +2, +4<br>
+                            Ionic charge: Pb<sup>+2</sup>, Pb<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P4<br>
+                            Electron configuration: 1s<sup>2</su> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1749<br>
+                            Melting point, &#176;C: 327.46<br>
+                            Heat of fusion, kJ/mol: 4.77<br>
+                            Specific heat, J/kg&#183;K: 127<br>
+                            Heat of vaporization, kJ/mol: 178<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 11340<br>
+                            Electronegativity: 2.33<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Bi">83 <br>Bi <br>208.98</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="biTooltip">
+                            <strong>Bismuth</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 208.9804 u (g/mol)<br>
+                            Oxidation states: +3, +5<br>
+                            Ionic charge: Bi<sup>+3</sup>, Bi<sup>+5</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P5<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>3</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1564<br>
+                            Melting point, &#176;C: 271.3<br>
+                            Heat of fusion, kJ/mol: 10.9<br>
+                            Specific heat, J/kg&#183;K: 122<br>
+                            Heat of vaporization, kJ/mol: 160<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 9780<br>
+                            Electronegativity: 2.02<br>
+                            Valence: 5
+                        </span>    
+                        <button type="button" class="periodicButton" id="Po">84 <br>Po <br>(209)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="poTooltip">
+                            <strong>Polonium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (208.9824) u (g/mol)<br>
+                            Oxidation states: +2, +4<br>
+                            Ionic charge: Po<sup>+2</sup>, Po<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P6<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>4</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 962<br>
+                            Melting point, &#176;C: 254<br>
+                            Heat of fusion, kJ/mol: 13<br>
+                            Heat of vaporization, kJ/mol: 100<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 9196<br>
+                            Electronegativity: 2<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="At">85 <br>At <br>(210)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="atTooltip">
+                            <strong>Astatine</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (209.9871) u (g/mol)<br>
+                            Oxidation states: -1, +1, +3, +5, +7<br>
+                            Ionic charge: At<sup>-</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P7<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Melting point, &#176;C: 302<br>
+                            Heat of fusion, kJ/mol: 6<br>
+                            Heat of vaporization, kJ/mol: 40<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Electronegativity: 2.2<br>
+                            Valence: 7
+                        </span>    
+                        <button type="button" class="periodicButton" id="Rn">86 <br>Rn <br>(222)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="rnTooltip">
+                            <strong>Radon</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (222.0176) u (g/mol)<br>
+                            Oxidation states: 0, +2<br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P8<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: -61.7<br>
+                            Melting point, &#176;C: -71<br>
+                            Heat of fusion, kJ/mol: 3<br>
+                            Specific heat, J/kg&#183;K: 93.65<br>
+                            Heat of vaporization, kJ/mol: 17<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 9.73<br>
+                            Valence: 6
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="periodicButton" id="Fr">87 <br>Fr <br>(223)</button></td>
+                    <td>
+                        <span class="hidden" id="frTooltip">
+                            <strong>Francium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (223) u (g/mol)<br>
+                            Oxidation states: +1<br>
+                            Ionic charge: Fr<sup>+</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P8 Q1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Heat of fusion, kJ/mol: 2<br>
+                            Heat of vaporization, kJ/mol: 65<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Electronegativity: 0.7<br>
+                            Valence: 1
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ra">88 <br>Ra <br>(226)</button>
+                    </td>
+                    <td class="border">
+                        <span class="hidden" id="raTooltip">
+                            <strong>Radium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (226) u (g/mol)<br>
+                            Oxidation states: +2<br>
+                            Ionic charge: Ra<sup>+2</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P8 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1737<br>
+                            Melting point, &#176;C: 700<br>
+                            Heat of fusion, kJ/mol: 8<br>
+                            Specific heat, J/kg&#183;K: 92<br>
+                            Heat of vaporization, kJ/mol: 125<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 5000<br>
+                            Electronegativity: 0.9<br>
+                            Valence: 2
+                        </span>
+                        89-103<br>#
+                    </td>
+                    <td><button type="button" class="periodicButton" id="Rf">104 <br>Rf <br>(265)</button></td>
+                    <td>
+                        <span class="hidden" id="rfTooltip">
+                            <strong>Rutherfordium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (261) u (g/mol)<br>
+                            Oxidation states: +4<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P10 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>2</sup><br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Db">105 <br>Db <br>(268)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="dbTooltip">
+                            <strong>Dubnium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (262) u (g/mol)<br>
+                            Oxidation states: +5<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P11 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>3</sup><br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Valence: 5
+                        </span>    
+                        <button type="button" class="periodicButton" id="Sg">106 <br>Sg <br>(271)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="sgTooltip">
+                            <strong>Seaborgium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (266) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P12 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>4</sup><br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Bh">107 <br>Bh <br>(270)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="bhTooltip">
+                            <strong>Bohrium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (264) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P13 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Valence: 7
+                        </span>    
+                        <button type="button" class="periodicButton" id="Hs">108 <br>Hs <br>(277)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="hsTooltip">
+                            <strong>Hassium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (277) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P14 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>6</sup><br>
+                        </span>    
+                        <button type="button" class="periodicButton" id="Mt">109 <br>Mt <br>(276)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="mtTooltip">
+                            <strong>Meitnerium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (268) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P15 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>7</sup><br>
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ds">110 <br>Ds <br>(281)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="dsTooltip">
+                            <strong>Darmstadium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (271) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P17 Q1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>9</sup><br>
+                        </span>    
+                        <button type="button" class="periodicButton" id="Rg">111 <br>Rg <br>(280)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="rgTooltip">
+                            <strong>Roentgenium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (272) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P18 Q1<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup><br>
+                        </span>    
+                        <button type="button" class="periodicButton" id="Cn">112 <br>Cn <br>(285)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="cnTooltip">
+                            <strong>Copernicium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (285) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P18 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup><br>
+                        </span>
+                        <button type="button" class="periodicButton" id="Nh">113 <br>Nh <br>(286)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="nhTooltip">
+                            <strong>Nihonium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (284) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P18 Q3<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>1</sup><br>
+                        </span>    
+                        <button type="button" class="periodicButton" id="Fl">114 <br>Fl <br>(289)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="flTooltip">
+                            <strong>Flerovium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (289) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P18 Q4<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>2</sup><br>
+                        </span>
+                        <button type="button" class="periodicButton" id="Mc">115 <br>Mc <br>(289)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="mcTooltip">
+                            <strong>Moscovium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (288) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P18 Q5<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>3</sup><br>
+                        </span>
+                        <button type="button" class="periodicButton" id="Lv">116 <br>Lv <br>(293)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="lvTooltip">
+                            <strong>Livermorium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (292) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P18 Q6<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>4</sup><br>
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ts">117 <br>Ts <br>(294)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="tsTooltip">
+                            <strong>Tennessine</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (294) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P18 Q7<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>5</sup><br>
+                        </span>    
+                        <button type="button" class="periodicButton" id="Og">118 <br>Og <br>(294)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="ogTooltip">
+                            <strong>Oganesson</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (294) u (g/mol)<br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P18 Q8<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>6</sup><br>
+                        </span>
+                    </td>
+                </tr>
+                <!-- hidden row -->
+                <tr>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+                    <td class="periodicCellHidden"></td>
+
+                </tr>
+                
+                <!-- lanthanides and actinides -->
+                <tr>
+                    <td colspan="3">* Lanthanide series</td>
+                    <td><button type="button" class="periodicButton" id="La">57 <br>La <br>138.91</button></td>
+                    <td>
+                        <span class="hidden" id="laTooltip">
+                            <strong>Lanthanum</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 138.9055 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: La<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N18 O9 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup>6s<sup>2</sup> 5p<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3464<br>
+                            Melting point, &#176;C: 920<br>
+                            Heat of fusion, kJ/mol: 6.2<br>
+                            Specific heat, J/kg&#183;K: 195<br>
+                            Heat of vaporization, kJ/mol: 400<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 6146<br>
+                            Electronegativity: 1.1<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ce">58 <br>Ce <br>140.12</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="ceTooltip">
+                            <strong>Cerium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 140.116 u (g/mol)<br>
+                            Oxidation states: +3, +4<br>
+                            Ionic charge: Ce<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N19 O9 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>1</sup> 5d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3360<br>
+                            Melting point, &#176;C: 798<br>
+                            Heat of fusion, kJ/mol: 5.5<br>
+                            Specific heat, J/kg&#183;K: 192<br>
+                            Heat of vaporization, kJ/mol: 350<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 6689<br>
+                            Electronegativity: 1.12<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Pr">59 <br>Pr <br>140.91</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="prTooltip">
+                            <strong>Praseodymium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 140.9077 u (g/mol)<br>
+                            Oxidation states: +3, +4<br>
+                            Ionic charge: Pr<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N21 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>3</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3290<br>
+                            Melting point, &#176;C: 931<br>
+                            Heat of fusion, kJ/mol: 6.9<br>
+                            Specific heat, J/kg&#183;K: 193<br>
+                            Heat of vaporization, kJ/mol: 330<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 6640<br>
+                            Electronegativity: 1.13<br>
+                            Valence: 4
+                        </span>     
+                        <button type="button" class="periodicButton" id="Nd">60 <br>Nd <br>144.24</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="ndTooltip">
+                            <strong>Neodymium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 144.242 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Nd<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N22 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>4</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3100<br>
+                            Melting point, &#176;C: 1021<br>
+                            Heat of fusion, kJ/mol: 7.1<br>
+                            Specific heat, J/kg&#183;K: 190<br>
+                            Heat of vaporization, kJ/mol: 285<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7010<br>
+                            Electronegativity: 1.14<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Pm">61 <br>Pm <br>(145)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="pmTooltip">
+                            <strong>Promethium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (145) u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Pm<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N23 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>5</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3000<br>
+                            Melting point, &#176;C: 1100<br>
+                            Heat of fusion, kJ/mol: 7.7<br>
+                            Heat of vaporization, kJ/mol: 290<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7264<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Sm">62 <br>Sm <br>150.36</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="smTooltip">
+                            <strong>Samarium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 150.36 u (g/mol)<br>
+                            Oxidation states: +2, +3<br>
+                            Ionic charge: Sm<sup>+2</sup>, Sm<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N24 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>6</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1803<br>
+                            Melting point, &#176;C: 1072<br>
+                            Heat of fusion, kJ/mol: 8.6<br>
+                            Specific heat, J/kg&#183;K: 196<br>
+                            Heat of vaporization, kJ/mol: 175<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7353<br>
+                            Electronegativity: 1.17<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Eu">63 <br>Eu <br>151.96</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="euTooltip">
+                            <strong>Europium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 151.964 u (g/mol)<br>
+                            Oxidation states: +2, +3<br>
+                            Ionic charge: Eu<sup>+2</sup>, Eu<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N25 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>7</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1527<br>
+                            Melting point, &#176;C: 822<br>
+                            Heat of fusion, kJ/mol: 9.2<br>
+                            Specific heat, J/kg&#183;K: 182<br>
+                            Heat of vaporization, kJ/mol: 175<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 5244<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Gd">64 <br>Gd <br>157.23</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="gdTooltip">
+                            <strong>Gadolinium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 157.25 u (g/mol)<br>
+                            Oxidation states: +2, +3<br>
+                            Ionic charge: Gd<sup>3</sup><br>
+                            Electrons per shell: K2 L8 M18 N25 O9 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>7</sup> 5d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3250<br>
+                            Melting point, &#176;C: 1313<br>
+                            Heat of fusion, kJ/mol: 10<br>
+                            Specific heat, J/kg&#183;K: 240<br>
+                            Heat of vaporization, kJ/mol: 305<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 7901<br>
+                            Electronegativity: 1.2<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Tb">65 <br>Tb <br>158.93</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="tbTooltip">
+                            <strong>Terbium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 158.9254 u (g/mol)<br>
+                            Oxidation states: +3, +4<br>
+                            Ionic charge: Tb<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N27 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>9</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3230<br>
+                            Melting point, &#176;C: 1356<br>
+                            Heat of fusion, kJ/mol: 10.8<br>
+                            Specific heat, J/kg&#183;K: 182<br>
+                            Heat of vaporization, kJ/mol: 295<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 8219<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Dy">66 <br>Dy <br>162.50</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="dyTooltip">
+                            <strong>Dysprosium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 162.5 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Dy<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N28 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2567<br>
+                            Melting point, &#176;C: 1412<br>
+                            Heat of fusion, kJ/mol: 11.1<br>
+                            Specific heat, J/kg&#183;K: 167<br>
+                            Heat of vaporization, kJ/mol: 280<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 8551<br>
+                            Electronegativity: 1.22<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Ho">67 <br>Ho <br>164.93</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="hoTooltip">
+                            <strong>Holmium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 164.9303 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Ho<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N29 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>11</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2700<br>
+                            Melting point, &#176;C: 1474<br>
+                            Heat of fusion, kJ/mol: 17<br>
+                            Specific heat, J/kg&#183;K: 165<br>
+                            Heat of vaporization, kJ/mol: 265<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 8795<br>
+                            Electronegativity: 1.23<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Er">68 <br>Er <br>167.26</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="erTooltip">
+                            <strong>Erbium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 167.259 u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Er<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N30 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>12</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2868<br>
+                            Melting point, &#176;C: 1497<br>
+                            Heat of fusion, kJ/mol: 19.9<br>
+                            Specific heat, J/kg&#183;K: 168<br>
+                            Heat of vaporization, kJ/mol: 285<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 9066<br>
+                            Electronegativity: 1.24<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Tm">69 <br>Tm <br>168.93</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="tmTooltip">
+                            <strong>Thulium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 168.9342 u (g/mol)<br>
+                            Oxidation states: +2, +3<br>
+                            Ionic charge: Tm<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N31 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>13</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1950<br>
+                            Melting point, &#176;C: 1545<br>
+                            Heat of fusion, kJ/mol: 16.8<br>
+                            Specific heat, J/kg&#183;K: 160<br>
+                            Heat of vaporization, kJ/mol: 250<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 9321<br>
+                            Electronegativity: 1.25<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Yb">70 <br>Yb <br>173.05</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="ybTooltip">
+                            <strong>Ytterbium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 173.045 u (g/mol)<br>
+                            Oxidation states: +2, +3<br>
+                            Ionic charge: Yb<sup>+2</sup>, Yb<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O8 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 1196<br>
+                            Melting point, &#176;C: 819<br>
+                            Heat of fusion, kJ/mol: 7.7<br>
+                            Specific heat, J/kg&#183;K: 154<br>
+                            Heat of vaporization, kJ/mol: 160<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 6570<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Lu">71 <br>Lu <br>174.97</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="luTooltip">
+                            <strong>Lutetium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): u (g/mol)<br>
+                            Oxidation states: <br>
+                            Ionic charge: <br>
+                            Electrons per shell: K2 L8 M18 N32 O9 P2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3402<br>
+                            Melting point, &#176;C: 1663<br>
+                            Heat of fusion, kJ/mol: 22<br>
+                            Specific heat, J/kg&#183;K: 154<br>
+                            Heat of vaporization, kJ/mol: 415<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 9841<br>
+                            Electronegativity: 1.27<br>
+                            Valence: 3
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"># Actinide series</td>
+                    <td><button type="button" class="periodicButton" id="Ac">89 <br>Ac <br>(227)</button></td>
+                    <td>
+                        <span class="hidden" id="acTooltip">
+                            <strong>Actinium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (227) u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Ac<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P9 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 6d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3200<br>
+                            Melting point, &#176;C: 1050<br>
+                            Heat of fusion, kJ/mol: 14<br>
+                            Specific heat, J/kg&#183;K: 120<br>
+                            Heat of vaporization, kJ/mol: 400<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 10070<br>
+                            Electronegativity: 1.1<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Th">90 <br>Th <br>232.04</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="thTooltip">
+                            <strong>Thorium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 232.0381 u (g/mol)<br>
+                            Oxidation states: +4<br>
+                            Ionic charge: Th<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O18 P10 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 6d<sup>2</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4820<br>
+                            Melting point, &#176;C: 1750<br>
+                            Heat of fusion, kJ/mol: 16<br>
+                            Specific heat, J/kg&#183;K: 118<br>
+                            Heat of vaporization, kJ/mol: 530<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 11724<br>
+                            Electronegativity: 1.3<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Pa">91 <br>Pa <br>231.04</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="paTooltip">
+                            <strong>Protactinium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 231.0359 u (g/mol)<br>
+                            Oxidation states: +4, +5<br>
+                            Ionic charge: Pa<sup>+4</sup>, Pa<sup>+5</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O20 P9 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>2</sup> 6d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4000<br>
+                            Melting point, &#176;C: 1572<br>
+                            Heat of fusion, kJ/mol: 15<br>
+                            Specific heat, J/kg&#183;K: 99.1<br>
+                            Heat of vaporization, kJ/mol: 470<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 15370<br>
+                            Electronegativity: 1.5<br>
+                            Valence: 5
+                        </span>    
+                        <button type="button" class="periodicButton" id="U">92 <br>U <br>238.03</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="uTooltip">
+                            <strong>Uranium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): 238.0289 u (g/mol)<br>
+                            Oxidation states: +3, +4, +5, +6<br>
+                            Ionic charge: U<sup>+4</sup>, U<sup>+6</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O21 P9 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>3</sup> 6d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3927<br>
+                            Melting point, &#176;C: 1135<br>
+                            Heat of fusion, kJ/mol: 14<br>
+                            Specific heat, J/kg&#183;K: 116<br>
+                            Heat of vaporization, kJ/mol: 420<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 19050<br>
+                            Electronegativity: 1.38<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Np">93 <br>Np <br>(237)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="npTooltip">
+                            <strong>Neptunium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (237) u (g/mol)<br>
+                            Oxidation states: +3, +4, +5, +6<br>
+                            Ionic charge: Np<sup>+5</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O22 P9 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>4</sup> 6d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 4000<br>
+                            Melting point, &#176;C: 644<br>
+                            Heat of fusion, kJ/mol: 10<br>
+                            Heat of vaporization, kJ/mol: 335<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 20450<br>
+                            Electronegativity: 1.36<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Pu">94 <br>Pu <br>(244)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="puTooltip">
+                            <strong>Plutonium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (244) u (g/mol)<br>
+                            Oxidation states: +3, +4, +5, +6<br>
+                            Ionic charge: Pu<sup>+4</sup>, Pu<sup>+6</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O24 P8 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>6</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3230<br>
+                            Melting point, &#176;C: 640<br>
+                            Heat of vaporization, kJ/mol: 325<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 19816<br>
+                            Electronegativity: 1.28<br>
+                            Valence: 6
+                        </span>    
+                        <button type="button" class="periodicButton" id="Am">95 <br>Am <br>(243)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="amTooltip">
+                            <strong>Americum</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (243) u (g/mol)<br>
+                            Oxidation states: +3, +4, +5, +6<br>
+                            Ionic charge: Am<sup>+3</sup>, Am<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O25 P8 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>7</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 2011<br>
+                            Melting point, &#176;C: 1176<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Electronegativity: 1.3<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Cm">96 <br>Cm <br>(247)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="cmTooltip">
+                            <strong>Curium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (247) u (g/mol)<br>
+                            Oxidation states: +3, +4<br>
+                            Ionic charge: Cm<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O25 P9 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>7</sup> 6d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Boiling point, &#176;C: 3110<br>
+                            Melting point, &#176;C: 1345<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 13510<br>
+                            Electronegativity: 1.3<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Bk">97 <br>Bk <br>(247)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="bkTooltip">
+                            <strong>Berkelium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (247) u (g/mol)<br>
+                            Oxidation states: +3, +4<br>
+                            Ionic charge: Bk<sup>+3</sup>, Bk<sup>+4</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O27 P8 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>9</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Melting point, &#176;C: 1050<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 14780<br>
+                            Electronegativity: 1.3<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Cf">98 <br>Cf <br>(251)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="cfTooltip">
+                            <strong>Californium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (251) u (g/mol)<br>
+                            Oxidation states: +3, +4<br>
+                            Ionic charge: Cf<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O28 P8 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>10</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Melting point, &#176;C: 900<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Density, kg/m<sup>3</sup>: 15100<br>
+                            Electronegativity: 1.3<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Es">99 <br>Es <br>(252)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="esTooltip">
+                            <strong>Einsteinium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (252) u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Es<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O29 P8 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>11</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Melting point, &#176;C: 860<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Electronegativity: 1.3<br>
+                            Valence: 4
+                        </span>    
+                        <button type="button" class="periodicButton" id="Fm">100 <br>Fm <br>(257)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="fmTooltip">
+                            <strong>Fermium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (257) u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Fm<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O30 P8 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>12</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Melting point, &#176;C: 1527<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Electronegativity: 1.3<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="Md">101 <br>Md <br>(258)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="mdTooltip">
+                            <strong>Mendelevium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (258) u (g/mol)<br>
+                            Oxidation states: +2, +3<br>
+                            Ionic charge: Md<sup>+2</sup>, Md<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O31 P8 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>13</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Melting point, &#176;C: 827<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Electronegativity: 1.3<br>
+                            Valence: 3
+                        </span>    
+                        <button type="button" class="periodicButton" id="No">102 <br>No <br>(259)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="noTooltip">
+                            <strong>Nobelium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (259) u (g/mol)<br>
+                            Oxidation states: +2, +3<br>
+                            Ionic charge: No<sup>+2</sup>, No<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P8 Q2<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Melting point, &#176;C: 827<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Electronegativity: 1.3<br>
+                            Valence: 3
+                        </span>     
+                        <button type="button" class="periodicButton" id="Lr">103 <br>Lr <br>(262)</button>
+                    </td>
+                    <td>
+                        <span class="hidden" id="lrTooltip">
+                            <strong>Lawrencium</strong><br>
+                            Atomic Properties<br>
+                            <br>
+                            Atomic weight (Relative atomic mass): (262) u (g/mol)<br>
+                            Oxidation states: +3<br>
+                            Ionic charge: Lr<sup>+3</sup><br>
+                            Electrons per shell: K2 L8 M18 N32 O32 P8 Q3<br>
+                            Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>1</sup><br>
+                            <br>
+                            <br>
+                            Thermodynamic Properties<br>
+                            <br>
+                            Melting point, &#176;C: 1627<br>
+                            <br>
+                            Other Properties<br>
+                            <br>
+                            Valence: 3
+                        </span>
+                    </td>
+                </tr>
+            </table>
+               
+        </div>
+        
+        </main>
+        <script src="periodic_table_script.js"></script>
+    </body>
+</html>

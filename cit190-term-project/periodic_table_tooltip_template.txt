@@ -1,0 +1,23 @@
+			<strong></strong><br>
+                        Atomic Properties<br>
+                        <br>
+                        Atomic weight (Relative atomic mass): u (g/mol)<br>
+                        Oxidation states: <br>
+                        Ionic charge: <br>
+                        Electrons per shell: K2 L8 M18 N32 O32 P8 Q2<br>
+			Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup><br>
+                        <br>
+                        <br>
+                        Thermodynamic Properties<br>
+                        <br>
+                        Boiling point, &#176;C: <br>
+                        Melting point, &#176;C: <br>
+                        Heat of fusion, kJ/mol: <br>
+                        Specific heat, J/kg&#183;K: <br>
+                        Heat of vaporization, kJ/mol: <br>
+                        <br>
+                        Other Properties<br>
+                        <br>
+			Density, kg/m<sup>3</sup>: <br>
+                        Electronegativity: <br>
+                        Valence: 

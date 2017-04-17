@@ -1,0 +1,3 @@
+As of 4/10/17, 16:00
+-multiplying on the right of parentheses doesn't work
+

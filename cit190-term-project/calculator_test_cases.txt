@@ -1,0 +1,5 @@
+-evaluate an expression with all operations with an arbitrary number of operands ungrouped
+-evaluate an expression consisting solely of an arbitrary number of transcendental functions
+-evaluate an expression consisting of an arbitrary number of grouping parentheses, nested to an arbitrary depth
+-evaluate an expression with arbitrary numbers of grouping parentheses, transcendental functions, and ungrouped operands
+

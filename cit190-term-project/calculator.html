@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Calculator</title>
+        <script src="jquery-3.2.0.min.js"></script>
+    </head>
+    <body>
+        <h1 class="header">Classroom Utilities</h1>
+        <nav>
+            <span><a class="" href="index.html">Home</a></span>
+            <span><a class="" href="calculator.html">Calculator</a></span>
+            <span><a class="" href="periodic_table.html">Periodic Table of the Elements</a></span>
+        </nav>
+        <main>
+            <h1 class="header">Calculator</h1>
+            <div id="calculator">
+                <br>
+                <input id="calcBox" type="text" size="71" readonly>
+                <br>
+
+                <!-- calculator buttons -->
+                <input type="button" class="calculatorButton" id="7" value="7"></input>
+                <input type="button" class="calculatorButton" id="8" value="8"></input>
+                <input type="button" class="calculatorButton" id="9" value="9"></input>
+                <input type="button" class="calculatorButton" id="divide" value="&#247;"></input>
+                <input type="button" class="calculatorButton" id="sin" value="sin(x)"></input>
+                <input type="button" class="calculatorButton" id="cos" value="cos(x)"></input>
+                <input type="button" class="calculatorButton" id="tan" value="tan(x)"></input>
+                <input type="button" class="calculatorButton" id="e_n" value="e&#8319;"></input>
+                <br>
+                <input type="button" class="calculatorButton" id="4" value="4"></input>
+                <input type="button" class="calculatorButton" id="5" value="5"></input>
+                <input type="button" class="calculatorButton" id="6" value="6"></input>
+                <input type="button" class="calculatorButton" id="multiply" value="&#215;"></input>
+                <input type="button" class="calculatorButton" id="arcsin" value="arcsin(x)"></input>
+                <input type="button" class="calculatorButton" id="arccos" value="arccos(x)"></input>
+                <input type="button" class="calculatorButton" id="arctan" value="arctan(x)"></input>
+                <input type="button" class="calculatorButton" id="ln_n" value="ln(n)"></input>
+                <br>
+                <input type="button" class="calculatorButton" id="1" value="1"></input>
+                <input type="button" class="calculatorButton" id="2" value="2"></input>
+                <input type="button" class="calculatorButton" id="3" value="3"></input>
+                <input type="button" class="calculatorButton" id="subtract" value="&#8722;"></input>
+                <input type="button" class="calculatorButton" id="log_10_x" value="log&#8321;&#8320;(x)"></input>
+                <input type="button" class="calculatorButton" id="log_2_x" value="log&#8322;(x)"></input>
+                <input type="button" class="calculatorButton" id="x_n" value="x&#8319;"></input>
+                <input type="button" class="calculatorButton" id="nth_root_of_x" value="&#8319;&#8730;x"></input>
+                <br>
+                <input type="button" class="calculatorButton" id="clear" value="Clear"></input>
+                <input type="button" class="calculatorButton" id="0" value="0"></input>
+                <input type="button" class="calculatorButton" id="equals" value="&#61;"></input>
+                <input type="button" class="calculatorButton" id="add" value="&#43;"></input>
+                <input type="button" class="calculatorButton" id="leftParenthesis" value="("></input>
+                <input type="button" class="calculatorButton" id="rightParenthesis" value=")"></input>
+                <input type="button" class="calculatorButton" id="decimalPoint" value="."></input>
+                <input type="button" class="calculatorButton" id="changeSign" value="&#x2d;"></input>
+                <br>
+                <input type="button" class="periodicCellHidden"></input>
+                <input type="button" class="periodicCellHidden"></input>
+                <input type="button" class="periodicCellHidden"></input>
+                <input type="button" class="periodicCellHidden"></input>
+                <input type="button" class="periodicCellHidden"></input>
+                <input type="button" class="calculatorButton" id="pi" value="&#960;"></input>
+                <input type="button" class="calculatorButton" id="e" value="e"></input>                            
+                <!-- 
+                potential keys to add:
+                    %
+                    x^2
+                    x!
+                -->
+            </div>
+        </main>
+        <script src="calculator_script.js"></script>
+    </body>
+</html>

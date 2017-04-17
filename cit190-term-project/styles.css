@@ -1,0 +1,245 @@
+/* elements */
+
+body {
+    
+}
+
+div#inputContent {
+    background-color: #fff4c6;
+
+}
+ 
+
+div#options {
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+div#optionsContent {
+    background-color: #b9efe7;
+    
+}
+
+div.primaryColor {
+    background-color: #ffe787;
+    width: 960px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+   
+    
+    
+}
+
+div.secondaryColor1 {
+    background-color: #d571b7;
+    width: 960px;
+    height: 400px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    
+  
+    
+}
+
+div.secondaryColor2 {
+    background-color: #65bfb3;
+    width: 960px;
+    height: 400px;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+   
+    
+
+}
+
+h1, h2 {
+    font-family: garamond, serif;
+}
+
+h1.header {
+    text-align: center;
+}
+
+li {
+    
+}
+
+
+li:before {
+    content: "• ";
+    color: red;
+    display: inline-block;
+    width: 2em;
+    margin-left: 2em; 
+}
+
+
+li span {
+    
+}
+
+li#test {
+    
+}
+
+main {
+    
+}
+
+nav {
+    display: block;
+    height: 4em;
+    background-color: #999ea3;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline;
+    font-family: helvetica;
+    color: white;
+    font-size: 1em;
+}
+
+nav a:hover {
+    background-color: #65bfb3;
+    color: black;
+}
+
+nav span {
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    font-size: 2em;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* classes */
+
+.border {
+    border: 1px solid black;
+}
+
+.calcSpan {
+    background-color: #d571b7;
+}
+
+.calculatorButton {
+    width: 110px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #268f81;
+    color: white;
+    font-size: 1.5em;
+}
+
+.homeSpan, .randomizerSpan {
+    background-color: #ffe787;
+}
+
+.hidden {
+    display: none;
+}
+
+.group_header {
+    vertical-align: bottom;
+}
+
+.periodicButton {
+    width: 50px;
+    height: 50px;
+}
+
+.periodicCellHidden {
+    visibility: hidden;
+}
+
+.periodicCellVisible {
+    visibility: visible;
+}
+
+.periodicSpan {
+    background-color: #65bfb3;
+}
+
+.visible {
+    display: block;
+    background-color: lightyellow;
+    position: absolute;
+    width: 300px;
+    z-index: 1;
+    text-align: left;
+}
+
+/* IDs */
+
+#calcBox {
+    text-align: right;
+    font-size: 1.5em;
+}
+
+#calculator {
+    text-align: center;
+    
+}
+
+#colorLegend {
+    border: 3px solid #268f81;
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+#equals {
+    background-color: #ad2d86;
+}
+
+#inputs {
+    border: 3px solid #ad2d86;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+}
+
+#names {
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+#periodic {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#pi {
+    margin-left: 5.25em;
+}
+
+
+#randomizer {
+    text-align: center;
+}
+
+#results {
+    display: inline-block;
+    border: 3px solid #268f81;
+    border-radius: 5px;
+    padding: 5px;
+}
