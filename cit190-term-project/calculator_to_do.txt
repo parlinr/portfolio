@@ -1,9 +1,0 @@
--clean up parentheses search-and-replace (I seem to have broken this somehow ....)
--add in the following keys:
-	-x!
-	-x^2
-	-pi
-	-e
-	-%
--add a radians/degrees toggle switch
--make sure the calculator can satisfy each test case

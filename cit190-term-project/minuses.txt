@@ -1,2 +1,0 @@
-\u002d is 'hyphen-minus,' which I will use as the negative sign
-\u2212 is 'minus sign,' which I will use for subtraction
