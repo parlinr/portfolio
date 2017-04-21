@@ -68,7 +68,7 @@ li {
     
 }
 
-
+/*
 li:before {
     content: "• ";
     color: red;
@@ -76,19 +76,7 @@ li:before {
     width: 2em;
     margin-left: 2em; 
 }
-
-
-li span {
-    
-}
-
-li#test {
-    
-}
-
-main {
-    
-}
+*/
 
 nav {
     display: block;
@@ -119,7 +107,6 @@ nav span {
 
 ul {
     list-style: none;
-    font-size: 2em;
 }
 
 td {
@@ -130,6 +117,24 @@ td {
 
 
 /* classes */
+
+.actinoids {
+    background-color: #fc9191;
+    width: 50px;
+    height: 50px;
+}
+
+.alkali {
+    background-color: #fcc791;
+    width: 50px;
+    height: 50px;
+}
+
+.alkalineEarth {
+    background-color: #fcdf91;
+    width: 50px;
+    height: 50px;
+}
 
 .border {
     border: 1px solid black;
@@ -148,6 +153,25 @@ td {
     font-size: 1.5em;
 }
 
+.colorList {
+    list-style: none;
+    display: inline-block;
+}
+
+.colorList span {
+    border: 1px solid black;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.halogen {
+    background-color: #fcf491;
+    width: 50px;
+    height: 50px;
+}
+
 .homeSpan, .randomizerSpan {
     background-color: #ffe787;
 }
@@ -158,6 +182,30 @@ td {
 
 .group_header {
     vertical-align: bottom;
+}
+
+.lanthanoids {
+    background-color: #d4ef89;
+    width: 50px;
+    height: 50px;
+}
+
+.metalloids {
+    background-color: #74ca74;
+    width: 50px;
+    height: 50px;
+}
+
+.nobleGases {
+    background-color: #cceef8;
+    width: 50px;
+    height: 50px;
+}
+
+.otherNonmetals {
+    background-color: #d2d5f9;
+    width: 50px;
+    height: 50px;
 }
 
 .periodicButton {
@@ -177,6 +225,20 @@ td {
     background-color: #65bfb3;
 }
 
+.postTransition {
+    background-color: #8768aa;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+
+.transition {
+    background-color: #be6ea6;
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
 .visible {
     display: block;
     background-color: lightyellow;
@@ -187,6 +249,7 @@ td {
 }
 
 /* IDs */
+
 
 #calcBox {
     text-align: right;
@@ -203,6 +266,7 @@ td {
     display: block;
     float: left;
     text-align: left;
+    height: 6em;
 }
 
 #equals {
@@ -214,6 +278,10 @@ td {
     border-radius: 5px;
     display: inline-block;
     padding: 5px;
+}
+
+#lastList {
+    float: top;
 }
 
 #names {
@@ -242,4 +310,8 @@ td {
     border: 3px solid #268f81;
     border-radius: 5px;
     padding: 5px;
+}
+
+#remainderOptions {
+    text-align: left;
 }

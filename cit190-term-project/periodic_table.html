@@ -16,13 +16,14 @@
             <span><a class="" href="index.html">Home</a></span>
             <span><a class="" href="calculator.html">Calculator</a></span>
             <span><a class="" href="periodic_table.html">Periodic Table of the Elements</a></span>
+            <span><a class="" href="randomizer.html">Randomizer</a></span>
         </nav>
         <main>
         <h1 class="header">Periodic Table of the Elements</h1>
         <div id="periodic">
             <table>
                 <tr>
-                    <td>1<button type="button" class="periodicButton" id="H">1 <br>H <br>1.008</button></td>
+                    <td>1<button type="button" class="periodicButton, otherNonmetals" id="H">1 <br>H <br>1.008</button></td>
                     <td class="group_header">
                         <span class="hidden" id="hTooltip">
                             <strong>Hydrogen</strong><br>
@@ -65,7 +66,7 @@
                     <td class="group_header">15</td>
                     <td class="group_header">16</td>
                     <td class="group_header">17</td>
-                    <td>18<button type="button" class="periodicButton" id="He">2 <br>He <br>4.0026</button></td>
+                    <td>18<button type="button" class="periodicButton, nobleGases" id="He">2 <br>He <br>4.0026</button></td>
                     <td>
                         <span class="hidden" id="heTooltip">
                             <strong>Helium</strong><br>
@@ -91,7 +92,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><button type="button" class="periodicButton" id="Li">3 <br>Li <br>6.94</button>
+                    <td><button type="button" class="periodicButton, alkali" id="Li">3 <br>Li <br>6.94</button>
                         </td>
                     <td>
                         <span class="hidden" id="liTooltip">
@@ -118,7 +119,7 @@
                             Electronegativity: 0.98<br>
                             Valence: 1
                         </span>
-                        <button type="button" class="periodicButton" id="Be">4 <br>Be <br>9.0122</button>
+                        <button type="button" class="periodicButton, alkalineEarth" id="Be">4 <br>Be <br>9.0122</button>
                     </td>
                     <td>
                         <span class="hidden" id="beTooltip">
@@ -155,7 +156,7 @@
                     <td class="periodicCellHidden"></td>
                     <td class="periodicCellHidden"></td>
                     <td class="periodicCellHidden"></td>
-                    <td><button type="button" class="periodicButton" id="B">5 <br>B <br>10.81</button></td>
+                    <td><button type="button" class="periodicButton, metalloids" id="B">5 <br>B <br>10.81</button></td>
                     <td>
                         <span class="hidden" id="bTooltip">
                             <strong>Boron</strong><br>
@@ -180,7 +181,7 @@
                             Electronegativity: 2.04<br>
                             Valence: 3
                         </span>
-                        <button type="button" class="periodicButton" id="C">6 <br>C <br>12.011</button>
+                        <button type="button" class="periodicButton, otherNonmetals" id="C">6 <br>C <br>12.011</button>
                     </td>
                     <td>
                         <span class="hidden" id="cTooltip">
@@ -206,7 +207,7 @@
                             Electronegativity: 2.55<br>
                             Valence: 4
                         </span>
-                        <button type="button" class="periodicButton" id="N">7 <br>N <br>14.007</button>
+                        <button type="button" class="periodicButton, otherNonmetals" id="N">7 <br>N <br>14.007</button>
                     </td>
                     <td>
                         <span class="hidden" id="nTooltip">
@@ -233,7 +234,7 @@
                             Electronegativity: 3.04<br>
                             Valence: 3
                         </span>
-                        <button type="button" class="periodicButton" id="O">8 <br>O <br>15.999</button>
+                        <button type="button" class="periodicButton, otherNonmetals" id="O">8 <br>O <br>15.999</button>
                     </td>
                     <td>
                         <span class="hidden" id="oTooltip">
@@ -260,7 +261,7 @@
                             Electronegativity: 3.44<br>
                             Valence: 2
                         </span>
-                        <button type="button" class="periodicButton" id="F">9 <br>F <br>18.998</button>
+                        <button type="button" class="periodicButton, halogen" id="F">9 <br>F <br>18.998</button>
                     </td>
                     <td>
                         <span class="hidden" id="fTooltip">
@@ -287,7 +288,7 @@
                             Electronegativity: 3.98<br>
                             Valence: 1
                         </span>
-                        <button type="button" class="periodicButton" id="Ne">10 <br>Ne <br>20.180</button>
+                        <button type="button" class="periodicButton, nobleGases" id="Ne">10 <br>Ne <br>20.180</button>
                     </td>
                     <td>
                         <span class="hidden" id="neTooltip">
@@ -316,7 +317,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><button type="button" class="periodicButton" id="Na">11 <br>Na <br>22.990</button></td>
+                    <td><button type="button" class="periodicButton, alkali" id="Na">11 <br>Na <br>22.990</button></td>
                     <td>
                         <span class="hidden" id="naTooltip">
                             <strong>Sodium</strong><br>
@@ -343,7 +344,7 @@
                             Electronegativity: 0.93<br>
                             Valence: 1
                         </span>
-                        <button type="button" class="periodicButton" id="Mg">12 <br>Mg <br>24.305</button>
+                        <button type="button" class="periodicButton, alkalineEarth" id="Mg">12 <br>Mg <br>24.305</button>
                     </td>
                     <td class="group_header">
                         <span class="hidden" id="mgTooltip">
@@ -382,7 +383,7 @@
                     <td class="group_header">10</td>
                     <td class="group_header">11</td>
                     <td class="group_header">12</td>
-                    <td><button type="button" class="periodicButton" id="Al">13 <br>Al <br>26.982</button></td>
+                    <td><button type="button" class="periodicButton, postTransition" id="Al">13 <br>Al <br>26.982</button></td>
                     <td>
                         <span class="hidden" id="alTooltip">
                             <strong>Aluminium</strong><br>
@@ -409,7 +410,7 @@
                             Electronegativity: 1.61<br>
                             Valence: 3
                         </span>
-                        <button type="button" class="periodicButton" id="Si">14 <br>Si <br>28.085</button>
+                        <button type="button" class="periodicButton, metalloids" id="Si">14 <br>Si <br>28.085</button>
                     </td>
                     <td>
                         <span class="hidden" id="siTooltip">
@@ -437,7 +438,7 @@
                             Electronegativity: 1.9<br>
                             Valence: 4
                         </span>
-                        <button type="button" class="periodicButton" id="P">15 <br>P <br>30.974</button>
+                        <button type="button" class="periodicButton, otherNonmetals" id="P">15 <br>P <br>30.974</button>
                     </td>
                     <td>
                         <span class="hidden" id="pTooltip">
@@ -465,7 +466,7 @@
                             Electronegativity: 2.19<br>
                             Valence: 5
                         </span>    
-                        <button type="button" class="periodicButton" id="S">16 <br>S <br>32.06</button>
+                        <button type="button" class="periodicButton, otherNonmetals" id="S">16 <br>S <br>32.06</button>
                     </td>
                     <td>
                         <span class="hidden" id="sTooltip">
@@ -493,7 +494,7 @@
                             Electronegativity: 2.58<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Cl">17 <br>Cl <br>35.45</button>
+                        <button type="button" class="periodicButton, halogen" id="Cl">17 <br>Cl <br>35.45</button>
                     </td>
                     <td>
                         <span class="hidden" id="clTooltip">
@@ -521,7 +522,7 @@
                             Electronegativity: 3.16<br>
                             Valence: 1
                         </span>
-                        <button type="button" class="periodicButton" id="Ar">18 <br>Ar <br>39.948</button>   
+                        <button type="button" class="periodicButton, nobleGases" id="Ar">18 <br>Ar <br>39.948</button>   
                     </td>
                     <td>
                         <span class="hidden" id="arTooltip">
@@ -551,7 +552,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="periodicButton" id="K">19 <br>K <br>39.098</button>
+                        <button type="button" class="periodicButton, alkali" id="K">19 <br>K <br>39.098</button>
                     </td>
                     <td>
                         <span class="hidden" id="kTooltip">
@@ -579,7 +580,7 @@
                             Electronegativity: 0.82<br>
                             Valence: 1
                         </span>
-                        <button type="button" class="periodicButton" id="Ca">20 <br>Ca <br>40.078</button>
+                        <button type="button" class="periodicButton, alkalineEarth" id="Ca">20 <br>Ca <br>40.078</button>
                     </td>
                     <td>
                         <span class="hidden" id="caTooltip">
@@ -607,7 +608,7 @@
                             Electronegativity: 1<br>
                             Valence: 2
                         </span>
-                        <button type="button" class="periodicButton" id="Sc">21 <br>Sc <br>44.956</button>
+                        <button type="button" class="periodicButton, transition" id="Sc">21 <br>Sc <br>44.956</button>
                     </td>
                     <td>
                         <span class="hidden" id="scTooltip">
@@ -635,7 +636,7 @@
                             Electronegativity: 1.36<br>
                             Valence: 3
                         </span>
-                        <button type="button" class="periodicButton" id="Ti">22 <br>Ti <br>47.867</button>
+                        <button type="button" class="periodicButton, transition" id="Ti">22 <br>Ti <br>47.867</button>
                     </td>
                     <td>
                         <span class="hidden" id="tiTooltip">
@@ -663,7 +664,7 @@
                             Electronegativity: 1.54<br>
                             Valence: 4
                         </span>
-                        <button type="button" class="periodicButton" id="V">23 <br>V <br>50.942</button>
+                        <button type="button" class="periodicButton, transition" id="V">23 <br>V <br>50.942</button>
                     </td>
                     <td>
                         <span class="hidden" id="vTooltip">
@@ -691,7 +692,7 @@
                             Electronegativity: 1.63<br>
                             Valence: 5
                         </span>    
-                        <button type="button" class="periodicButton" id="Cr">24 <br>Cr <br>51.996</button>
+                        <button type="button" class="periodicButton, transition" id="Cr">24 <br>Cr <br>51.996</button>
                     </td>
                     <td>
                         <span class="hidden" id="crTooltip">
@@ -719,7 +720,7 @@
                             Electronegativity: 1.66<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Mn">25 <br>Mn <br>54.938</button>
+                        <button type="button" class="periodicButton, transition" id="Mn">25 <br>Mn <br>54.938</button>
                     </td>
                     <td>
                         <span class="hidden" id="mnTooltip">
@@ -747,7 +748,7 @@
                             Electronegativity: 1.55<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Fe">26 <br>Fe <br>55.845</button>
+                        <button type="button" class="periodicButton, transition" id="Fe">26 <br>Fe <br>55.845</button>
                     </td>
                     <td>
                         <span class="hidden" id="feTooltip">
@@ -775,7 +776,7 @@
                             Electronegativity: 1.83<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Co">27 <br>Co <br>58.933</button>
+                        <button type="button" class="periodicButton, transition" id="Co">27 <br>Co <br>58.933</button>
                     </td>
                     <td>
                         <span class="hidden" id="coTooltip">
@@ -803,7 +804,7 @@
                             Electronegativity: 1.88<br>
                             Valence: 4
                         </span>
-                        <button type="button" class="periodicButton" id="Ni">28 <br>Ni <br>58.693</button>
+                        <button type="button" class="periodicButton, transition" id="Ni">28 <br>Ni <br>58.693</button>
                     </td>
                     <td>
                         <span class="hidden" id="niTooltip">
@@ -831,7 +832,7 @@
                             Electronegativity: 1.91<br>
                             Valence: 2
                         </span>   
-                        <button type="button" class="periodicButton" id="Cu">29 <br>Cu <br>63.546</button>
+                        <button type="button" class="periodicButton, transition" id="Cu">29 <br>Cu <br>63.546</button>
                     </td>
                     <td>
                         <span class="hidden" id="cuTooltip">
@@ -859,7 +860,7 @@
                             Electronegativity: 1.9<br>
                             Valence: 2
                         </span>    
-                        <button type="button" class="periodicButton" id="Zn">30 <br>Zn <br>65.38</button>
+                        <button type="button" class="periodicButton, transition" id="Zn">30 <br>Zn <br>65.38</button>
                     </td>
                     <td>
                         <span class="hidden" id="znTooltip">
@@ -887,7 +888,7 @@
                             Electronegativity: 1.65<br>
                             Valence: 2
                         </span>
-                        <button type="button" class="periodicButton" id="Ga">31 <br>Ga <br>69.723</button>
+                        <button type="button" class="periodicButton, postTransition" id="Ga">31 <br>Ga <br>69.723</button>
                     </td>
                     <td>
                         <span class="hidden" id="gaTooltip">
@@ -915,7 +916,7 @@
                             Electronegativity: 1.81<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Ge">32 <br>Ge <br>72.630</button>
+                        <button type="button" class="periodicButton, metalloids" id="Ge">32 <br>Ge <br>72.630</button>
                     </td>
                     <td>
                         <span class="hidden" id="geTooltip">
@@ -943,7 +944,7 @@
                             Electronegativity: 2.01<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="As">33 <br>As <br>74.922</button>
+                        <button type="button" class="periodicButton, metalloids" id="As">33 <br>As <br>74.922</button>
                     </td>
                     <td>
                         <span class="hidden" id="asTooltip">
@@ -971,7 +972,7 @@
                             Electronegativity: 2.18<br>
                             Valence: 5
                         </span>
-                        <button type="button" class="periodicButton" id="Se">34 <br>Se <br>78.97</button>
+                        <button type="button" class="periodicButton, otherNonmetals" id="Se">34 <br>Se <br>78.97</button>
                     </td>
                     <td>
                         <span class="hidden" id="seTooltip">
@@ -999,7 +1000,7 @@
                             Electronegativity: 2.55<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Br">35 <br>Br <br>79.904</button>
+                        <button type="button" class="periodicButton, halogen" id="Br">35 <br>Br <br>79.904</button>
                     </td>
                     <td>
                         <span class="hidden" id="brTooltip">
@@ -1027,7 +1028,7 @@
                             Electronegativity: 2.96<br>
                             Valence: 7
                         </span>    
-                        <button type="button" class="periodicButton" id="Kr">36 <br>Kr <br>83.798</button>
+                        <button type="button" class="periodicButton, nobleGases" id="Kr">36 <br>Kr <br>83.798</button>
                     </td>
                     <td>
                         <span class="hidden" id="krTooltip">
@@ -1058,7 +1059,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <button type="button" class="periodicButton" id="Rb">37 <br>Rb <br>85.468</button>
+                        <button type="button" class="periodicButton, alkali" id="Rb">37 <br>Rb <br>85.468</button>
                     </td>
                     <td>
                         <span class="hidden" id="rbTooltip">
@@ -1086,7 +1087,7 @@
                             Electronegativity: 0.82<br>
                             Valence: 1
                         </span>
-                        <button type="button" class="periodicButton" id="Sr">38 <br>Sr <br>87.68</button>
+                        <button type="button" class="periodicButton, alkalineEarth" id="Sr">38 <br>Sr <br>87.68</button>
                     </td>
                     <td>
                         <span class="hidden" id="srTooltip">
@@ -1114,7 +1115,7 @@
                             Electronegativity: 0.95<br>
                             Valence: 2
                         </span>
-                        <button type="button" class="periodicButton" id="Y">39 <br>Y <br>88.906</button>
+                        <button type="button" class="periodicButton, transition" id="Y">39 <br>Y <br>88.906</button>
                     </td>
                     <td>
                         <span class="hidden" id="yTooltip">
@@ -1142,7 +1143,7 @@
                             Electronegativity: 1.22<br>
                             Valence: 3
                         </span>     
-                        <button type="button" class="periodicButton" id="Zr">40 <br>Zr <br>91.224</button>
+                        <button type="button" class="periodicButton, transition" id="Zr">40 <br>Zr <br>91.224</button>
                     </td>
                     <td>
                         <span class="hidden" id="zrTooltip">
@@ -1170,7 +1171,7 @@
                             Electronegativity: 1.33<br>
                             Valence: 4
                         </span>
-                        <button type="button" class="periodicButton" id="Nb">41 <br>Nb <br>92.906</button>
+                        <button type="button" class="periodicButton, transition" id="Nb">41 <br>Nb <br>92.906</button>
                     </td>
                     <td>
                         <span class="hidden" id="nbTooltip">
@@ -1198,7 +1199,7 @@
                             Electronegativity: 1.6<br>
                             Valence: 5
                         </span>    
-                        <button type="button" class="periodicButton" id="Mo">42 <br>Mo <br>95.95</button>
+                        <button type="button" class="periodicButton, transition" id="Mo">42 <br>Mo <br>95.95</button>
                     </td>
                     <td>
                         <span class="hidden" id="moTooltip">
@@ -1226,7 +1227,7 @@
                             Electronegativity: 2.16<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Tc">43 <br>Tc <br>(98)</button>
+                        <button type="button" class="periodicButton, transition" id="Tc">43 <br>Tc <br>(98)</button>
                     </td>
                     <td>
                         <span class="hidden" id="tcTooltip">
@@ -1254,7 +1255,7 @@
                             Electronegativity: 1.9<br>
                             Valence: 7
                         </span>    
-                        <button type="button" class="periodicButton" id="Ru">44 <br>Ru <br>101.07</button>
+                        <button type="button" class="periodicButton, transition" id="Ru">44 <br>Ru <br>101.07</button>
                     </td>
                     <td>
                         <span class="hidden" id="ruTooltip">
@@ -1282,7 +1283,7 @@
                             Electronegativity: 2.2<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Rh">45 <br>Rh <br>102.91</button>
+                        <button type="button" class="periodicButton, transition" id="Rh">45 <br>Rh <br>102.91</button>
                     </td>
                     <td>
                         <span class="hidden" id="rhTooltip">
@@ -1310,7 +1311,7 @@
                             Electronegativity: 2.28<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Pd">46 <br>Pd <br>106.42</button>
+                        <button type="button" class="periodicButton, transition" id="Pd">46 <br>Pd <br>106.42</button>
                     </td>
                     <td>
                         <span class="hidden" id="pdTooltip">
@@ -1338,7 +1339,7 @@
                             Electronegativity: 2.2<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Ag">47 <br>Ag <br>107.87</button>
+                        <button type="button" class="periodicButton, transition" id="Ag">47 <br>Ag <br>107.87</button>
                     </td>
                     <td>
                         <span class="hidden" id="agTooltip">
@@ -1366,7 +1367,7 @@
                             Electronegativity: 1.93<br>
                             Valence: 1
                         </span>    
-                        <button type="button" class="periodicButton" id="Cd">48 <br>Cd <br>112.41</button>
+                        <button type="button" class="periodicButton, transition" id="Cd">48 <br>Cd <br>112.41</button>
                     </td>
                     <td>
                         <span class="hidden" id="cdTooltip">
@@ -1394,7 +1395,7 @@
                             Electronegativity: 1.69<br>
                             Valence: 2
                         </span>    
-                        <button type="button" class="periodicButton" id="In">49 <br>In <br>114.82</button>
+                        <button type="button" class="periodicButton, postTransition" id="In">49 <br>In <br>114.82</button>
                     </td>
                     <td>
                         <span class="hidden" id="inTooltip">
@@ -1422,7 +1423,7 @@
                             Electronegativity: 1.78<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Sn">50 <br>Sn <br>118.71</button>
+                        <button type="button" class="periodicButton, postTransition" id="Sn">50 <br>Sn <br>118.71</button>
                     </td>
                     <td>
                         <span class="hidden" id="snTooltip">
@@ -1450,7 +1451,7 @@
                             Electronegativity: 1.96<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Sb">51 <br>Sb <br>121.76</button>
+                        <button type="button" class="periodicButton, metalloids" id="Sb">51 <br>Sb <br>121.76</button>
                     </td>
                     <td>
                         <span class="hidden" id="sbTooltip">
@@ -1478,7 +1479,7 @@
                             Electronegativity: 2.05<br>
                             Valence: 5
                         </span>    
-                        <button type="button" class="periodicButton" id="Te">52 <br>Te <br>127.60</button>
+                        <button type="button" class="periodicButton, metalloids" id="Te">52 <br>Te <br>127.60</button>
                     </td>
                     <td>
                         <span class="hidden" id="teTooltip">
@@ -1506,7 +1507,7 @@
                             Electronegativity: 2.1<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="I">53 <br>I <br>126.90</button>
+                        <button type="button" class="periodicButton, halogen" id="I">53 <br>I <br>126.90</button>
                     </td>
                     <td>
                         <span class="hidden" id="iTooltip">
@@ -1534,7 +1535,7 @@
                             Electronegativity: 2.66<br>
                             Valence: 7
                         </span>    
-                        <button type="button" class="periodicButton" id="Xe">54 <br>Xe <br>131.29</button>
+                        <button type="button" class="periodicButton, nobleGases" id="Xe">54 <br>Xe <br>131.29</button>
                     </td>
                     <td>
                         <span class="hidden" id="xeTooltip">
@@ -1564,7 +1565,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><button type="button" class="periodicButton" id="Cs">55 <br>Cs <br>132.91</button></td>
+                    <td><button type="button" class="periodicButton, alkali" id="Cs">55 <br>Cs <br>132.91</button></td>
                     <td>
                         <span class="hidden" id="csTooltip">
                             <strong>Caesium</strong><br>
@@ -1591,7 +1592,7 @@
                             Electronegativity: 0.79<br>
                             Valence: 1
                         </span>
-                        <button type="button" class="periodicButton" id="Ba">56 <br>Ba <br>137.33</button>
+                        <button type="button" class="periodicButton, alkalineEarth" id="Ba">56 <br>Ba <br>137.33</button>
                     </td>
                     <td class="border">
                         <span class="hidden" id="baTooltip">
@@ -1621,7 +1622,7 @@
                         </span>    
                         57-71<br>*
                     </td>
-                    <td><button type="button" class="periodicButton" id="Hf">72 <br>Hf <br>178.49</button></td>
+                    <td><button type="button" class="periodicButton, transition" id="Hf">72 <br>Hf <br>178.49</button></td>
                     <td>
                         <span class="hidden" id="hfTooltip">
                             <strong>Hafnium</strong><br>
@@ -1648,7 +1649,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Ta">73 <br>Ta <br>180.95</button>
+                        <button type="button" class="periodicButton, transition" id="Ta">73 <br>Ta <br>180.95</button>
                     </td>
                     <td>
                         <span class="hidden" id="taTooltip">
@@ -1676,7 +1677,7 @@
                             Electronegativity: 1.5<br>
                             Valence: 5
                         </span>    
-                        <button type="button" class="periodicButton" id="W">74 <br>W <br>183.84</button>
+                        <button type="button" class="periodicButton, transition" id="W">74 <br>W <br>183.84</button>
                     </td>
                     <td>
                         <span class="hidden" id="wTooltip">
@@ -1704,7 +1705,7 @@
                             Electronegativity: 2.36<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Re">75 <br>Re <br>186.21</button>
+                        <button type="button" class="periodicButton, transition" id="Re">75 <br>Re <br>186.21</button>
                     </td>
                     <td>
                         <span class="hidden" id="reTooltip">
@@ -1732,7 +1733,7 @@
                             Electronegativity: 1.9<br>
                             Valence: 7
                         </span>    
-                        <button type="button" class="periodicButton" id="Os">76 <br>Os <br>190.23</button>
+                        <button type="button" class="periodicButton, transition" id="Os">76 <br>Os <br>190.23</button>
                     </td>
                     <td>
                         <span class="hidden" id="osTooltip">
@@ -1760,7 +1761,7 @@
                             Electronegativity: 2.2<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Ir">77 <br>Ir <br>192.22</button>
+                        <button type="button" class="periodicButton, transition" id="Ir">77 <br>Ir <br>192.22</button>
                     </td>
                     <td>
                         <span class="hidden" id="irTooltip">
@@ -1788,7 +1789,7 @@
                             Electronegativity: 2.2<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Pt">78 <br>Pt <br>195.08</button>
+                        <button type="button" class="periodicButton, transition" id="Pt">78 <br>Pt <br>195.08</button>
                     </td>
                     <td>
                         <span class="hidden" id="ptTooltip">
@@ -1816,7 +1817,7 @@
                             Electronegativity: 2.28<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Au">79 <br>Au <br>196.97</button>
+                        <button type="button" class="periodicButton, transition" id="Au">79 <br>Au <br>196.97</button>
                     </td>
                     <td>
                         <span class="hidden" id="auTooltip">
@@ -1844,7 +1845,7 @@
                             Electronegativity: 2.54<br>
                             Valence: 5
                         </span>    
-                        <button type="button" class="periodicButton" id="Hg">80 <br>Hg <br>200.59</button>
+                        <button type="button" class="periodicButton, transition" id="Hg">80 <br>Hg <br>200.59</button>
                     </td>
                     <td>
                         <span class="hidden" id="hgTooltip">
@@ -1872,7 +1873,7 @@
                             Electronegativity: 2<br>
                             Valence: 2
                         </span>    
-                        <button type="button" class="periodicButton" id="Tl">81 <br>Tl <br>204.38</button>
+                        <button type="button" class="periodicButton, postTransition" id="Tl">81 <br>Tl <br>204.38</button>
                     </td>
                     <td>
                         <span class="hidden" id="tlTooltip">
@@ -1900,7 +1901,7 @@
                             Electronegativity: 1.62<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Pb">82 <br>Pb <br>207.2</button>
+                        <button type="button" class="periodicButton, postTransition" id="Pb">82 <br>Pb <br>207.2</button>
                     </td>
                     <td>
                         <span class="hidden" id="pbTooltip">
@@ -1928,7 +1929,7 @@
                             Electronegativity: 2.33<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Bi">83 <br>Bi <br>208.98</button>
+                        <button type="button" class="periodicButton, postTransition" id="Bi">83 <br>Bi <br>208.98</button>
                     </td>
                     <td>
                         <span class="hidden" id="biTooltip">
@@ -1956,7 +1957,7 @@
                             Electronegativity: 2.02<br>
                             Valence: 5
                         </span>    
-                        <button type="button" class="periodicButton" id="Po">84 <br>Po <br>(209)</button>
+                        <button type="button" class="periodicButton, metalloids" id="Po">84 <br>Po <br>(209)</button>
                     </td>
                     <td>
                         <span class="hidden" id="poTooltip">
@@ -1983,7 +1984,7 @@
                             Electronegativity: 2<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="At">85 <br>At <br>(210)</button>
+                        <button type="button" class="periodicButton, halogen" id="At">85 <br>At <br>(210)</button>
                     </td>
                     <td>
                         <span class="hidden" id="atTooltip">
@@ -2008,7 +2009,7 @@
                             Electronegativity: 2.2<br>
                             Valence: 7
                         </span>    
-                        <button type="button" class="periodicButton" id="Rn">86 <br>Rn <br>(222)</button>
+                        <button type="button" class="periodicButton, nobleGases" id="Rn">86 <br>Rn <br>(222)</button>
                     </td>
                     <td>
                         <span class="hidden" id="rnTooltip">
@@ -2037,7 +2038,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><button type="button" class="periodicButton" id="Fr">87 <br>Fr <br>(223)</button></td>
+                    <td><button type="button" class="periodicButton, alkali" id="Fr">87 <br>Fr <br>(223)</button></td>
                     <td>
                         <span class="hidden" id="frTooltip">
                             <strong>Francium</strong><br>
@@ -2060,7 +2061,7 @@
                             Electronegativity: 0.7<br>
                             Valence: 1
                         </span>    
-                        <button type="button" class="periodicButton" id="Ra">88 <br>Ra <br>(226)</button>
+                        <button type="button" class="periodicButton, alkalineEarth" id="Ra">88 <br>Ra <br>(226)</button>
                     </td>
                     <td class="border">
                         <span class="hidden" id="raTooltip">
@@ -2090,7 +2091,7 @@
                         </span>
                         89-103<br>#
                     </td>
-                    <td><button type="button" class="periodicButton" id="Rf">104 <br>Rf <br>(265)</button></td>
+                    <td><button type="button" class="periodicButton, transition" id="Rf">104 <br>Rf <br>(265)</button></td>
                     <td>
                         <span class="hidden" id="rfTooltip">
                             <strong>Rutherfordium</strong><br>
@@ -2105,7 +2106,7 @@
                             <br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Db">105 <br>Db <br>(268)</button>
+                        <button type="button" class="periodicButton, transition" id="Db">105 <br>Db <br>(268)</button>
                     </td>
                     <td>
                         <span class="hidden" id="dbTooltip">
@@ -2121,7 +2122,7 @@
                             <br>
                             Valence: 5
                         </span>    
-                        <button type="button" class="periodicButton" id="Sg">106 <br>Sg <br>(271)</button>
+                        <button type="button" class="periodicButton, transition" id="Sg">106 <br>Sg <br>(271)</button>
                     </td>
                     <td>
                         <span class="hidden" id="sgTooltip">
@@ -2136,7 +2137,7 @@
                             <br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Bh">107 <br>Bh <br>(270)</button>
+                        <button type="button" class="periodicButton, transition" id="Bh">107 <br>Bh <br>(270)</button>
                     </td>
                     <td>
                         <span class="hidden" id="bhTooltip">
@@ -2154,7 +2155,7 @@
                             <br>
                             Valence: 7
                         </span>    
-                        <button type="button" class="periodicButton" id="Hs">108 <br>Hs <br>(277)</button>
+                        <button type="button" class="periodicButton, transition" id="Hs">108 <br>Hs <br>(277)</button>
                     </td>
                     <td>
                         <span class="hidden" id="hsTooltip">
@@ -2165,7 +2166,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P14 Q2<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>6</sup><br>
                         </span>    
-                        <button type="button" class="periodicButton" id="Mt">109 <br>Mt <br>(276)</button>
+                        <button type="button" class="periodicButton, transition" id="Mt">109 <br>Mt <br>(276)</button>
                     </td>
                     <td>
                         <span class="hidden" id="mtTooltip">
@@ -2176,7 +2177,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P15 Q2<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>7</sup><br>
                         </span>    
-                        <button type="button" class="periodicButton" id="Ds">110 <br>Ds <br>(281)</button>
+                        <button type="button" class="periodicButton, transition" id="Ds">110 <br>Ds <br>(281)</button>
                     </td>
                     <td>
                         <span class="hidden" id="dsTooltip">
@@ -2187,7 +2188,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P17 Q1<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>9</sup><br>
                         </span>    
-                        <button type="button" class="periodicButton" id="Rg">111 <br>Rg <br>(280)</button>
+                        <button type="button" class="periodicButton, transition" id="Rg">111 <br>Rg <br>(280)</button>
                     </td>
                     <td>
                         <span class="hidden" id="rgTooltip">
@@ -2198,7 +2199,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P18 Q1<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup><br>
                         </span>    
-                        <button type="button" class="periodicButton" id="Cn">112 <br>Cn <br>(285)</button>
+                        <button type="button" class="periodicButton, transition" id="Cn">112 <br>Cn <br>(285)</button>
                     </td>
                     <td>
                         <span class="hidden" id="cnTooltip">
@@ -2209,7 +2210,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P18 Q2<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup><br>
                         </span>
-                        <button type="button" class="periodicButton" id="Nh">113 <br>Nh <br>(286)</button>
+                        <button type="button" class="periodicButton, postTransition" id="Nh">113 <br>Nh <br>(286)</button>
                     </td>
                     <td>
                         <span class="hidden" id="nhTooltip">
@@ -2220,7 +2221,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P18 Q3<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>1</sup><br>
                         </span>    
-                        <button type="button" class="periodicButton" id="Fl">114 <br>Fl <br>(289)</button>
+                        <button type="button" class="periodicButton, postTransition" id="Fl">114 <br>Fl <br>(289)</button>
                     </td>
                     <td>
                         <span class="hidden" id="flTooltip">
@@ -2231,7 +2232,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P18 Q4<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>2</sup><br>
                         </span>
-                        <button type="button" class="periodicButton" id="Mc">115 <br>Mc <br>(289)</button>
+                        <button type="button" class="periodicButton, postTransition" id="Mc">115 <br>Mc <br>(289)</button>
                     </td>
                     <td>
                         <span class="hidden" id="mcTooltip">
@@ -2242,7 +2243,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P18 Q5<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>3</sup><br>
                         </span>
-                        <button type="button" class="periodicButton" id="Lv">116 <br>Lv <br>(293)</button>
+                        <button type="button" class="periodicButton, postTransition" id="Lv">116 <br>Lv <br>(293)</button>
                     </td>
                     <td>
                         <span class="hidden" id="lvTooltip">
@@ -2253,7 +2254,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P18 Q6<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>4</sup><br>
                         </span>    
-                        <button type="button" class="periodicButton" id="Ts">117 <br>Ts <br>(294)</button>
+                        <button type="button" class="periodicButton, halogen" id="Ts">117 <br>Ts <br>(294)</button>
                     </td>
                     <td>
                         <span class="hidden" id="tsTooltip">
@@ -2264,7 +2265,7 @@
                             Electrons per shell: K2 L8 M18 N32 O32 P18 Q7<br>
                             Electron configuration: 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup> 4d<sup>10</sup> 5p<sup>6</sup> 6s<sup>2</sup> 4f<sup>14</sup> 5d<sup>10</sup> 6p<sup>6</sup> 7s<sup>2</sup> 5f<sup>14</sup> 6d<sup>10</sup> 7p<sup>5</sup><br>
                         </span>    
-                        <button type="button" class="periodicButton" id="Og">118 <br>Og <br>(294)</button>
+                        <button type="button" class="periodicButton, nobleGases" id="Og">118 <br>Og <br>(294)</button>
                     </td>
                     <td>
                         <span class="hidden" id="ogTooltip">
@@ -2303,7 +2304,7 @@
                 <!-- lanthanides and actinides -->
                 <tr>
                     <td colspan="3">* Lanthanide series</td>
-                    <td><button type="button" class="periodicButton" id="La">57 <br>La <br>138.91</button></td>
+                    <td><button type="button" class="periodicButton, lanthanoids" id="La">57 <br>La <br>138.91</button></td>
                     <td>
                         <span class="hidden" id="laTooltip">
                             <strong>Lanthanum</strong><br>
@@ -2330,7 +2331,7 @@
                             Electronegativity: 1.1<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Ce">58 <br>Ce <br>140.12</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Ce">58 <br>Ce <br>140.12</button>
                     </td>
                     <td>
                         <span class="hidden" id="ceTooltip">
@@ -2358,7 +2359,7 @@
                             Electronegativity: 1.12<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Pr">59 <br>Pr <br>140.91</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Pr">59 <br>Pr <br>140.91</button>
                     </td>
                     <td>
                         <span class="hidden" id="prTooltip">
@@ -2386,7 +2387,7 @@
                             Electronegativity: 1.13<br>
                             Valence: 4
                         </span>     
-                        <button type="button" class="periodicButton" id="Nd">60 <br>Nd <br>144.24</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Nd">60 <br>Nd <br>144.24</button>
                     </td>
                     <td>
                         <span class="hidden" id="ndTooltip">
@@ -2414,7 +2415,7 @@
                             Electronegativity: 1.14<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Pm">61 <br>Pm <br>(145)</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Pm">61 <br>Pm <br>(145)</button>
                     </td>
                     <td>
                         <span class="hidden" id="pmTooltip">
@@ -2440,7 +2441,7 @@
                             Density, kg/m<sup>3</sup>: 7264<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Sm">62 <br>Sm <br>150.36</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Sm">62 <br>Sm <br>150.36</button>
                     </td>
                     <td>
                         <span class="hidden" id="smTooltip">
@@ -2468,7 +2469,7 @@
                             Electronegativity: 1.17<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Eu">63 <br>Eu <br>151.96</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Eu">63 <br>Eu <br>151.96</button>
                     </td>
                     <td>
                         <span class="hidden" id="euTooltip">
@@ -2495,7 +2496,7 @@
                             Density, kg/m<sup>3</sup>: 5244<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Gd">64 <br>Gd <br>157.23</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Gd">64 <br>Gd <br>157.23</button>
                     </td>
                     <td>
                         <span class="hidden" id="gdTooltip">
@@ -2523,7 +2524,7 @@
                             Electronegativity: 1.2<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Tb">65 <br>Tb <br>158.93</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Tb">65 <br>Tb <br>158.93</button>
                     </td>
                     <td>
                         <span class="hidden" id="tbTooltip">
@@ -2550,7 +2551,7 @@
                             Density, kg/m<sup>3</sup>: 8219<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Dy">66 <br>Dy <br>162.50</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Dy">66 <br>Dy <br>162.50</button>
                     </td>
                     <td>
                         <span class="hidden" id="dyTooltip">
@@ -2578,7 +2579,7 @@
                             Electronegativity: 1.22<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Ho">67 <br>Ho <br>164.93</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Ho">67 <br>Ho <br>164.93</button>
                     </td>
                     <td>
                         <span class="hidden" id="hoTooltip">
@@ -2606,7 +2607,7 @@
                             Electronegativity: 1.23<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Er">68 <br>Er <br>167.26</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Er">68 <br>Er <br>167.26</button>
                     </td>
                     <td>
                         <span class="hidden" id="erTooltip">
@@ -2634,7 +2635,7 @@
                             Electronegativity: 1.24<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Tm">69 <br>Tm <br>168.93</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Tm">69 <br>Tm <br>168.93</button>
                     </td>
                     <td>
                         <span class="hidden" id="tmTooltip">
@@ -2662,7 +2663,7 @@
                             Electronegativity: 1.25<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Yb">70 <br>Yb <br>173.05</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Yb">70 <br>Yb <br>173.05</button>
                     </td>
                     <td>
                         <span class="hidden" id="ybTooltip">
@@ -2689,7 +2690,7 @@
                             Density, kg/m<sup>3</sup>: 6570<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Lu">71 <br>Lu <br>174.97</button>
+                        <button type="button" class="periodicButton, lanthanoids" id="Lu">71 <br>Lu <br>174.97</button>
                     </td>
                     <td>
                         <span class="hidden" id="luTooltip">
@@ -2721,7 +2722,7 @@
                 </tr>
                 <tr>
                     <td colspan="3"># Actinide series</td>
-                    <td><button type="button" class="periodicButton" id="Ac">89 <br>Ac <br>(227)</button></td>
+                    <td><button type="button" class="periodicButton, actinoids" id="Ac">89 <br>Ac <br>(227)</button></td>
                     <td>
                         <span class="hidden" id="acTooltip">
                             <strong>Actinium</strong><br>
@@ -2748,7 +2749,7 @@
                             Electronegativity: 1.1<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Th">90 <br>Th <br>232.04</button>
+                        <button type="button" class="periodicButton, actinoids" id="Th">90 <br>Th <br>232.04</button>
                     </td>
                     <td>
                         <span class="hidden" id="thTooltip">
@@ -2776,7 +2777,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Pa">91 <br>Pa <br>231.04</button>
+                        <button type="button" class="periodicButton, actinoids" id="Pa">91 <br>Pa <br>231.04</button>
                     </td>
                     <td>
                         <span class="hidden" id="paTooltip">
@@ -2804,7 +2805,7 @@
                             Electronegativity: 1.5<br>
                             Valence: 5
                         </span>    
-                        <button type="button" class="periodicButton" id="U">92 <br>U <br>238.03</button>
+                        <button type="button" class="periodicButton, actinoids" id="U">92 <br>U <br>238.03</button>
                     </td>
                     <td>
                         <span class="hidden" id="uTooltip">
@@ -2832,7 +2833,7 @@
                             Electronegativity: 1.38<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Np">93 <br>Np <br>(237)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Np">93 <br>Np <br>(237)</button>
                     </td>
                     <td>
                         <span class="hidden" id="npTooltip">
@@ -2859,7 +2860,7 @@
                             Electronegativity: 1.36<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Pu">94 <br>Pu <br>(244)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Pu">94 <br>Pu <br>(244)</button>
                     </td>
                     <td>
                         <span class="hidden" id="puTooltip">
@@ -2885,7 +2886,7 @@
                             Electronegativity: 1.28<br>
                             Valence: 6
                         </span>    
-                        <button type="button" class="periodicButton" id="Am">95 <br>Am <br>(243)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Am">95 <br>Am <br>(243)</button>
                     </td>
                     <td>
                         <span class="hidden" id="amTooltip">
@@ -2909,7 +2910,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Cm">96 <br>Cm <br>(247)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Cm">96 <br>Cm <br>(247)</button>
                     </td>
                     <td>
                         <span class="hidden" id="cmTooltip">
@@ -2934,7 +2935,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Bk">97 <br>Bk <br>(247)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Bk">97 <br>Bk <br>(247)</button>
                     </td>
                     <td>
                         <span class="hidden" id="bkTooltip">
@@ -2958,7 +2959,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Cf">98 <br>Cf <br>(251)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Cf">98 <br>Cf <br>(251)</button>
                     </td>
                     <td>
                         <span class="hidden" id="cfTooltip">
@@ -2982,7 +2983,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Es">99 <br>Es <br>(252)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Es">99 <br>Es <br>(252)</button>
                     </td>
                     <td>
                         <span class="hidden" id="esTooltip">
@@ -3005,7 +3006,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 4
                         </span>    
-                        <button type="button" class="periodicButton" id="Fm">100 <br>Fm <br>(257)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Fm">100 <br>Fm <br>(257)</button>
                     </td>
                     <td>
                         <span class="hidden" id="fmTooltip">
@@ -3028,7 +3029,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="Md">101 <br>Md <br>(258)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Md">101 <br>Md <br>(258)</button>
                     </td>
                     <td>
                         <span class="hidden" id="mdTooltip">
@@ -3051,7 +3052,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 3
                         </span>    
-                        <button type="button" class="periodicButton" id="No">102 <br>No <br>(259)</button>
+                        <button type="button" class="periodicButton, actinoids" id="No">102 <br>No <br>(259)</button>
                     </td>
                     <td>
                         <span class="hidden" id="noTooltip">
@@ -3074,7 +3075,7 @@
                             Electronegativity: 1.3<br>
                             Valence: 3
                         </span>     
-                        <button type="button" class="periodicButton" id="Lr">103 <br>Lr <br>(262)</button>
+                        <button type="button" class="periodicButton, actinoids" id="Lr">103 <br>Lr <br>(262)</button>
                     </td>
                     <td>
                         <span class="hidden" id="lrTooltip">
@@ -3099,7 +3100,27 @@
                     </td>
                 </tr>
             </table>
-               
+        <div id="colorLegend">
+            <ul class="colorList">
+                <li><span class="actinoids"></span> Actinoids</li>
+                <li><span class="alkali"></span> Alkali Metals</li>
+                <li><span class="alkalineEarth"></span> Alkaline Earth Metals</li>
+             </ul>   
+            <ul class="colorList">
+                <li><span class="halogen"></span> Halogens</li>
+                <li><span class="lanthanoids"></span> Lanthanoids</li>
+                <li><span class="metalloids"></span> Metalloids</li>
+            </ul> 
+            <ul class="colorList">
+                <li><span class="nobleGases"></span> Noble Gases</li>
+                <li><span class="otherNonmetals"></span> Other Nonmetals</li>
+                <li><span class="postTransition"></span> Post-transition Metals</li>
+            </ul>
+            <ul class="colorList" id="lastList">
+                <li><span class="transition"></span> Transition Metals</li>
+            </ul>
+        </div>
+        
         </div>
         
         </main>
