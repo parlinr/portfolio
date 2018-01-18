@@ -1,10 +1,15 @@
+// all of these event listeners follow the same pattern:
+//    -record whether or not any tooltips are open
+//    -in a separate variable, record whether or not this element's tooltip is open
+//    -if any tooltips are open, close them
+//    -if this tooltip was not previously open, open it
+
 $(function() {
 	$('#H').on('click',function() {
         var $query = $('span.visible');
         var IsOpen = $('#hTooltip').hasClass("visible");
         if ($query.length >0) {
             $query.removeClass("visible");
-            
         }
         if (!IsOpen) {
             $('#hTooltip').toggleClass("visible");

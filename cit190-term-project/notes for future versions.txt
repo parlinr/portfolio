@@ -1,0 +1,3 @@
+Instead of using complicated regexes, think about inserting "*" where required in the user
+input (after the user presses = but before it's evaluated) to "spoof" implicit 
+multiplication.

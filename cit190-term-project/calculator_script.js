@@ -11,7 +11,7 @@ var calcBox = document.getElementById("calcBox");
 
 // here, "transcendental functions" are: exponentials, logarithms, and trigonometric 
 // functions (the nomenclature is borrowed from the "Stewart's Calculus" series of textbooks)
-// presently, the trigonometric functions produce results in radians 
+// presently, the trigonometric functions take arguments in radians
 
 //this one will not match (), and it will not match the transcendental functions
 var parenRegex = /\(((?:\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)[\u2212+*/]{1})+(?:\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)\)/;
@@ -19,10 +19,17 @@ var parenRegex = /\(((?:\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)[\u2212+*/]{1})+(?:\-?\d
 //transcendental functions use: lowercase letters, numbers, ^, _, and &#8730;
 
 //potential transcendental function regex
-var transcendentalRegex = /([a-z0-9^_\u23b7]+)\((?:\-?\d+(?:\.\d+|\-?\u03c0|\-?e)?[\u2212+*/]{1})*(?:\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)\)/;
+var transcendentalRegex = /([a-z0-9^_\u23b7\u03c0]+)\((?:\-?\d+(?:\.\d+|\-?\u03c0|\-?e)?[\u2212+*/]{1})*(?:\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)\)/;
 
-//regexes for finding each operator separately (the script will evaluate the expression
-//two operands at a time)
+// regexes for finding each operator separately (the script will evaluate the expression
+// two operands at a time)
+// each of these regular expressions will look for:
+//    -a floating point number/integer, pi, or e
+//    -an operator
+//    -a floating point number/integer, pi, or e again
+// it should be noted that I used \u002d (-, hyphen minus) as the negatve sign and 
+// \u2212 as the minus sign, otherwise the arithmetic with negative numbers would not have
+// evaluated properly
 var multiplyRegex = /(\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)[*]{1}(\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)/;
 var divideRegex = /(\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)[/]{1}(\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)/;
 var addRegex = /(\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)[+]{1}(\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)/;
@@ -39,6 +46,8 @@ function clearBox() {
     $calcBox.val("");
 }
 
+// these two functions replace the symbols for pi and e with the Math object
+// properties just before the arithmetic is performed
 function piSymbolToNumber(piSymbol) {
     piNumber = piSymbol.replace(/\u03c0/,Math.PI);
     return piNumber;
@@ -49,15 +58,18 @@ function eSymbolToNumber(eSymbol) {
     return eNumber;
 }
 
-// this is the "factory" method; all of the arithmetic is performed here
+// this is the "factory" function; all of the arithmetic is performed here
 function equals() {
-    
+    var contents = calcBox.value;
+    // before evaluation, search and insert *s in locations that need them
+    // (to support "implicit multiplication")
+    var searchAndInsertRegex = /(?:\-?\d+(?:\.\d+)?(?:\(|[a-z]|\u03c0))|(?:\)(?:\-?\d+(?:\.\d+)?)|[a-z]|\u03c0)/g;
+    //contents = 
+
 
     var inLoop = true;
     var returnResult;
-    // need a variable that contains the entire content of calcBox to determine
-    // context
-    var contents = calcBox.value;
+    
 
     // loop for parentheses
     while (inLoop) {
@@ -165,9 +177,6 @@ function equals() {
         
         
     } 
-    // when I get to the +/- key, I should think about using \u2212 for subtraction
-    // (binary minus) and \u002d for negation (unary minus) 
-
    //loop for transcendentals
     
     inLoop = true;
@@ -179,7 +188,8 @@ function equals() {
         }
         else {
             // search for the argument passed to the particular transcendental function
-            var transcendentalExtractRegex = /\((\-?\d+(?:\.\d+)?|\-?\u03c0|\-?e)\)/;
+            // and store it
+            var transcendentalExtractRegex = /\((-?\d+(?:\.\d+)?|-?\u03c0|-?e)\)/;
             var transcendentalArgument = transcendentalExtractRegex.exec(result[0]);
             // for x^n and nth-root-of-x, search for the base or root suppplied in the
             // expression
@@ -199,10 +209,12 @@ function equals() {
             if (transcendentalArgument[1] === "\u03c0" || transcendentalArgument[1] === "-\u03c0") {
                 transcendentalArgument[1] = piSymbolToNumber(transcendentalArgument[1]);
             }
+            transcendentalFunctionCallString = transcendentalFunctionCallString.replace(/\u03c0/, Math.PI);
             //substituting "e" with Math.E
             if (transcendentalArgument[1] === "e" || transcendentalArgument[1] === "-e") {
                 transcendentalArgument[1] = eSymbolToNumber(transcendentalArgument[1]);
             }
+            transcendentalFunctionCallString = transcendentalFunctionCallString.replace(/e/, Math.E);
 
             // need to substitute \u03c0 with Math.PI as the Number object will
             // not do this
@@ -391,7 +403,7 @@ function equals() {
     calcBox.value = contents;
 }
 
-// a much simpler search-and-replace function
+// a much simpler search-and-replace function than the previous one
 function replaceExpression(userInput, target, replacement) {
     
     replacement = replacement.toString();
